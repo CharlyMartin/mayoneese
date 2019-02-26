@@ -1,9 +1,14 @@
+// Librairies
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from "gatsby-image"
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
+// Components
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+
+// Data
+import data from '../data/home-page';
 
 function HomePage(props) {
   return (
@@ -11,14 +16,12 @@ function HomePage(props) {
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
       <div className="container">
-        <h1>This is the home page</h1>
+        <h1>
+          {data.landing.value1}
+          <span>{data.landing.value2}</span>
+        </h1>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
-
-        {/* Fluid images need container and will take 100% of parent */}
-        <div style={{ maxWidth: `200px`, marginBottom: `1.45rem` }}>
-          <Img fluid={props.data.gatsbyIcon.childImageSharp.fluid} />
-        </div>
 
         <Img fixed={props.data.astronaut.childImageSharp.fixed} />
         <br/>

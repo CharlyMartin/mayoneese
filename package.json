@@ -17,7 +17,7 @@
     "gatsby-plugin-sitemap": "^2.0.5",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.13",
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0"
@@ -35,6 +35,8 @@
     "clean": "rm -rf .cache && rm -rf public"
   },
   "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.15.2"
   },
   "repository": {

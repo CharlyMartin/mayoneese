@@ -7,7 +7,7 @@ function sample(arr, number) {
   
   // Return the x first items
   return arr.slice(0, number);
-};
+}
 
 
 function textEllipsis(str, limit = 110) {
