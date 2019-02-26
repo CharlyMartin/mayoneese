@@ -1,0 +1,77 @@
+/*
+For interface design, a practical approach is to simply pick values by hand.
+This way ou have total control over which sizes exist,
+instead of outsourcing that job to some mathematical formula.
+
+Avoid em units:
+Because em units are relative to the current font size, the computed font size
+of nested elements is often not actually a value in your scale.
+Stick to px or rem units, it’s the only way to guarantee you’re sticking to the system.
+*/
+
+:root {
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-18: 18px;
+  --font-20: 20px;
+  --font-24: 24px;
+  --font-30: 30px;
+  --font-36: 36px;
+  --font-48: 48px;
+  --font-60: 60px;
+  --font-72: 72px;
+  --font-90: 90px;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Oswald';
+  /* color: var(--black-dark);
+  font-size: var(--h1-size);
+  font-weight: 800;
+  padding-bottom: var(--space-xl);
+  letter-spacing: -0.02rem;
+  line-height: 1.6; */
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+
+/* Body */
+p, .text {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+.text-small {
+
+}
+
+/* :root {
+  --size-0250: 0.250rem;
+  --size-0500: 0.500rem;
+  --size-0625: 0.625rem;
+  --size-0750: 0.750rem;
+  --size-0875: 0.875rem;
+  --size-1000: 1.000rem;
+  --size-1125: 1.125rem;
+  --size-1250: 1.250rem;
+  --size-1500: 1.500rem;
+  --size-2000: 2.000rem;
+  --size-2500: 3.000rem;
+  --size-60: 60rem;
+  --size-72: 72rem;
+  --size-90: 90rem;
+} */
+

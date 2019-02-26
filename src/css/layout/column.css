@@ -1,0 +1,47 @@
+/* Column */
+.column-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* 2 COLUMNS */
+.column-half {
+  flex: 0 0 45%;
+}
+
+/* 3 COLUMNS */
+.column-third {
+  flex: 0 0 30%;
+}
+
+/* 4 COLUMNS */
+.column-quarter {
+  flex: 1 0 22%;
+}
+
+
+/* Laptop 11 inches */
+@media screen and (max-width: 1070px) {
+  /* Up to that screen width, the following rules apply: */
+  .column-third, .column-half, .column-quarter {
+    flex: 0 0 48%;
+    padding-bottom: var(--space-lg);
+  }
+}
+
+/* iPad */
+@media screen and (max-width: 850px) {
+  /* Up to that screen width, the following rules apply: */
+
+  /* TWO,  THREE AND FOUR COL => 100% width */
+  .column-third, .column-half, .column-quarter {
+    flex: 0 0 100%;
+    padding-bottom: var(--space-lg);
+  }
+}
+
+/* Mobile (Iphone, Pixel, Galaxy) */
+/* @media screen and (max-width: 560px) {
+
+} */

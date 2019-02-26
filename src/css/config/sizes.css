@@ -1,0 +1,37 @@
+/*
+For a system to be truly useful, it needs to
+take into consideration the relative difference between adjacent values.
+Make sure no two values in your scale are ever closer than about 25%.
+
+At the small end of the scale (size of an icon, padding inside a button):
+A couple of pixels can make a big difference,
+jumping from 12px to 16px is an increase of 33%.
+
+At the large end of the scale (width of a card, vertical spacing in landing page:
+A couple of pixels is basically imperceivable,
+Going from 500px to 520px is a 4% difference.
+*/
+
+:root {
+  --size-025: 0.25rem;
+  --size-050: 0.50rem;
+  --size-075: 0.75rem;
+  /* 16px */
+  --size-100: 1.00rem;
+  --size-120: 1.25rem; 
+  --size-150: 1.50rem;
+  --size-200: 2.00rem;
+  --size-300: 3.00rem;
+  --size-400: 4.00rem;
+  --size-600: 6.00rem;
+  --size-800: 8.00rem;
+    /* 160px */
+  --size-1000: 10rem;
+  --size-1200: 12rem;
+  --size-1600: 16rem;
+  /* 384px */
+  --size-2400: 24rem;
+  --size-3200: 32rem;
+  --size-4000: 40rem;
+  --size-4800: 48rem;
+}
