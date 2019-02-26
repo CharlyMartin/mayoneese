@@ -25,6 +25,7 @@ function Header(props) {
       <Link to="/">
         <Img fixed={props.logo.childImageSharp.fixed} />
       </Link>
+      <br/>
     </div>
   )
 }

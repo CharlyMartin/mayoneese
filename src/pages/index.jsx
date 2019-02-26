@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 // Components
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import SVG from '../components/svg';
 
 // Data
 import data from '../data/home-page';
@@ -14,19 +15,13 @@ function HomePage(props) {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-
+      <SVG />
       <div className="container">
         <h1>
           {data.landing.value1}
-          <span>{data.landing.value2}</span>
+          <div>{data.landing.value2}</div>
         </h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-
-        <Img fixed={props.data.astronaut.childImageSharp.fixed} />
-        <br/>
-        
-        <Link to="/page-2/">Go to page 2</Link>
+        <h2>{data.landing.description}</h2>
       </div>
     </Layout>
   )
