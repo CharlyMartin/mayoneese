@@ -1,0 +1,7 @@
+{
+  "importCost.smallPackageSize": 50,
+  "importCost.mediumPackageSize": 100,
+  "importCost.smallPackageColor": "#f7f7f7",
+  "importCost.mediumPackageColor": "orange",
+  "importCost.largePackageColor": "red",
+}

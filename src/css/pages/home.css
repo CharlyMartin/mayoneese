@@ -1,84 +1,10 @@
-#home-page .hero-image {
-  height: 75vh;
-}
-
-#title {
-  font-size: var(--title-size);
-  font-weight: 800;
-  letter-spacing: var(--negative-letter-spacing);
-  color: var(--black-dark);
-}
-
-#caption {
- font-size: var(--h2-size);
- font-weight: 400;
- color: var(--black-normal);
-}
-
-.brand-container-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand-container-top h1 {
-  margin: 0;
-}
-
-.testimonials {
-  position: relative;
-}
-
-.testimonials h3 {
-  color: var(--black-dark);
-}
-
-.testimonials-subtitle {
-  color: var(--black-light);
-}
-
-#google {
+.svg-container {
   position: absolute;
-  right: var(--space-md);
-  top: var(--space-md);
+  left: 0;
+  right: 0;
 }
 
-#google img {
-  width: 25px;
-}
-
-.reviews img {
-  width: 15px;
-}
-
-/* Actual sizing of the images is done in HomePageQuery (90px) */
-.referrals div:first-child {
-  margin: var(--space-xl);
-}
-
-
-
-/* iPad */
-@media screen and (max-width: 850px) {
-  /* Up to that screen width, the following rules apply: */
-  #home-page .hero-image {
-    height: var(--hero-height-mobile);
-  }
-  
-  .brand-container-top {
-    display: block;
-  }
-
-  .brand-container-top h1 {
-    margin-bottom: var(--space-xl);
-  }
-
-  #title {
-    font-size: var(--title-size-mobile);
-  }
-}
-
-/* Mobile (Iphone, Pixel, Galaxy) */
-@media screen and (max-width: 560px) {
-  /* Up to that screen width, the following rules apply: */
+.svg-container svg {
+  width: 100%;
+  height: 100%;
 }

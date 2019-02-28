@@ -1,67 +1,67 @@
 :root {
   /* colour-1 */
-  --colour-1-100: hsl(100, 100%, 50%);
-  --colour-1-200: hsl(100, 100%, 50%);
-  --colour-1-300: hsl(100, 100%, 50%);
-  --colour-1-400: hsl(100, 100%, 50%);
-  --colour-1-500: hsl(100, 100%, 50%);
-  --colour-1-600: hsl(100, 100%, 50%);
-  --colour-1-700: hsl(100, 100%, 50%);
-  --colour-1-800: hsl(100, 100%, 50%);
-  --colour-1-900: hsl(100, 100%, 50%);
+  --yellow-10: #FFFFFF;
+  --yellow-20: #FFFFFF;
+  --yellow-30: #F3D37A;
+  --yellow-40: #F0C654;
+  --yellow-50: #EDBA2F;
+  --yellow-60: #FFFFFF;
+  --yellow-70: #FFFFFF;
+  --yellow-80: #FFFFFF;
+  --yellow-90: #FFFFFF;
 
   /* colour-2 */
-  --colour-2-100: hsl(100, 100%, 50%);
-  --colour-2-200: hsl(100, 100%, 50%);
-  --colour-2-300: hsl(100, 100%, 50%);
-  --colour-2-400: hsl(100, 100%, 50%);
-  --colour-2-500: hsl(100, 100%, 50%);
-  --colour-2-600: hsl(100, 100%, 50%);
-  --colour-2-700: hsl(100, 100%, 50%);
-  --colour-2-800: hsl(100, 100%, 50%);
-  --colour-2-900: hsl(100, 100%, 50%);
+  --colour-2-10: #FFFFFF;
+  --colour-2-20: #FFFFFF;
+  --colour-2-30: #FFFFFF;
+  --colour-2-40: #FFFFFF;
+  --colour-2-50: #FFFFFF;
+  --colour-2-60: #FFFFFF;
+  --colour-2-70: #FFFFFF;
+  --colour-2-80: #FFFFFF;
+  --colour-2-90: #FFFFFF;
 
   /* colour-3 */
-  --colour-3-100: hsl(100, 100%, 50%);
-  --colour-3-200: hsl(100, 100%, 50%);
-  --colour-3-300: hsl(100, 100%, 50%);
-  --colour-3-400: hsl(100, 100%, 50%);
-  --colour-3-500: hsl(100, 100%, 50%);
-  --colour-3-600: hsl(100, 100%, 50%);
-  --colour-3-700: hsl(100, 100%, 50%);
-  --colour-3-800: hsl(100, 100%, 50%);
-  --colour-3-900: hsl(100, 100%, 50%);
+  --colour-3-10: #FFFFFF;
+  --colour-3-20: #FFFFFF;
+  --colour-3-30: #FFFFFF;
+  --colour-3-40: #FFFFFF;
+  --colour-3-50: #FFFFFF;
+  --colour-3-60: #FFFFFF;
+  --colour-3-70: #FFFFFF;
+  --colour-3-80: #FFFFFF;
+  --colour-3-90: #FFFFFF;
 
   /* colour-4 */
-  --colour-4-100: hsl(100, 100%, 50%);
-  --colour-4-200: hsl(100, 100%, 50%);
-  --colour-4-300: hsl(100, 100%, 50%);
-  --colour-4-400: hsl(100, 100%, 50%);
-  --colour-4-500: hsl(100, 100%, 50%);
-  --colour-4-600: hsl(100, 100%, 50%);
-  --colour-4-700: hsl(100, 100%, 50%);
-  --colour-4-800: hsl(100, 100%, 50%);
-  --colour-4-900: hsl(100, 100%, 50%);
+  --colour-4-10: #FFFFFF;
+  --colour-4-20: #FFFFFF;
+  --colour-4-30: #FFFFFF;
+  --colour-4-40: #FFFFFF;
+  --colour-4-50: #FFFFFF;
+  --colour-4-60: #FFFFFF;
+  --colour-4-70: #FFFFFF;
+  --colour-4-80: #FFFFFF;
+  --colour-4-90: #FFFFFF;
 
   /* colour-5 */
-  --colour-5-100: hsl(100, 100%, 50%);
-  --colour-5-200: hsl(100, 100%, 50%);
-  --colour-5-300: hsl(100, 100%, 50%);
-  --colour-5-400: hsl(100, 100%, 50%);
-  --colour-5-500: hsl(100, 100%, 50%);
-  --colour-5-600: hsl(100, 100%, 50%);
-  --colour-5-700: hsl(100, 100%, 50%);
-  --colour-5-800: hsl(100, 100%, 50%);
-  --colour-5-900: hsl(100, 100%, 50%);
+  --colour-5-10: #FFFFFF;
+  --colour-5-20: #FFFFFF;
+  --colour-5-30: #FFFFFF;
+  --colour-5-40: #FFFFFF;
+  --colour-5-50: #FFFFFF;
+  --colour-5-60: #FFFFFF;
+  --colour-5-70: #FFFFFF;
+  --colour-5-80: #FFFFFF;
+  --colour-5-90: #FFFFFF;
 
   /* grey */
-  --grey-100: hsl(100, 100%, 50%);
-  --grey-200: hsl(100, 100%, 50%);
-  --grey-300: hsl(100, 100%, 50%);
-  --grey-400: hsl(100, 100%, 50%);
-  --grey-500: hsl(100, 100%, 50%);
-  --grey-600: hsl(100, 100%, 50%);
-  --grey-700: hsl(100, 100%, 50%);
-  --grey-800: hsl(100, 100%, 50%);
-  --grey-900: hsl(100, 100%, 50%);
+  --grey-10: #F9F8F6;
+  --grey-20: #FFFFFF;
+  --grey-30: #FFFFFF;
+  --grey-40: #FFFFFF;
+  --grey-50: #FFFFFF;
+  --grey-60: #FFFFFF;
+  --grey-70: #FFFFFF;
+  --grey-80: #FFFFFF;
+  --grey-90: #FFFFFF;
 }
