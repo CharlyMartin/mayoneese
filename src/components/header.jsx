@@ -17,7 +17,7 @@ const query = graphql`
 
 // Component
 function Header(props) {
-  console.log(props)
+  console.log(props);
 
   return (
     <div className="container">

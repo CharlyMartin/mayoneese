@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 // Components
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import SVG from '../components/svg';
+import BannerSVG from '../components/banner-svg';
 
 // Data
 import data from '../data/home-page';
@@ -15,7 +15,7 @@ function HomePage(props) {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <SVG />
+      <BannerSVG id="red" />
       <div className="container">
         <h1>
           {data.landing.value1}
