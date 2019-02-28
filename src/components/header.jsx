@@ -5,6 +5,9 @@ import Img from "gatsby-image";
 // SVG
 import logo from '../images/mayoneese.svg';
 
+// Data
+import pages from '../data/internal-links'
+
 // Component
 function Header(props) {
   console.log(props);
@@ -13,8 +16,8 @@ function Header(props) {
     <div className="container">
       <br/>
       <br/>
-      <Link to="/">
-        <img src={logo} alt="Mayoneese Logo"/>
+      <Link to={`/${pages.home}`}>
+        <img src={logo} alt="Mayoneese Logo" width="120"/>
         {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
       </Link>
       <br/>
