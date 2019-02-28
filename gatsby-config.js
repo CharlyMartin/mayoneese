@@ -63,12 +63,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
+            family: `Quicksand`,
+            variants: [`300`, `400`, `500`, `700`]
           },
         ],
       },
@@ -92,18 +88,18 @@ module.exports = {
     },
     
     // NETLIFY
-    {
+    // {
       // Needs to be last in the array of plugins!
       // Seems fantastic to create on-the-spot redirects
       // https://www.gatsbyjs.org/docs/actions/#createRedirect
       // https://www.netlify.com/docs/redirects/
-      resolve: `gatsby-plugin-netlify`,
+      // resolve: `gatsby-plugin-netlify`,
       // options: {
-      //   headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-      //   allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-      //   createRedirect({ fromPath: "/old-url", toPath: "/new-url", isPermanent: true }),
-      //   createRedirect({ fromPath: "/url", toPath: "/zn-CH/url", Language: "zn" }),
+        // headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        // allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        // createRedirect({ fromPath: "/old-url", toPath: "/new-url", isPermanent: true }),
+        // createRedirect({ fromPath: "/url", toPath: "/zn-CH/url", Language: "zn" }),
       // },
-    },
+    // },
   ]
 }
