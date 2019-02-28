@@ -11,9 +11,6 @@ import BannerSVG from '../components/banner-svg';
 // CSS
 import '../css/pages/home.css'
 
-// SVG
-import bannerSVG from '../images/banner.svg';
-
 // Data
 import data from '../data/home-page';
 
