@@ -63,12 +63,8 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
+            family: `Quicksand`,
+            variants: [`300`, `400`, `500`, `700`]
           },
         ],
       },
