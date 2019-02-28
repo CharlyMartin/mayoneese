@@ -98,12 +98,12 @@ module.exports = {
       // https://www.gatsbyjs.org/docs/actions/#createRedirect
       // https://www.netlify.com/docs/redirects/
       resolve: `gatsby-plugin-netlify`,
-      // options: {
-      //   headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-      //   allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-      //   createRedirect({ fromPath: "/old-url", toPath: "/new-url", isPermanent: true }),
-      //   createRedirect({ fromPath: "/url", toPath: "/zn-CH/url", Language: "zn" }),
-      // },
+      options: {
+        // headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        // allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        // createRedirect({ fromPath: "/old-url", toPath: "/new-url", isPermanent: true }),
+        // createRedirect({ fromPath: "/url", toPath: "/zn-CH/url", Language: "zn" }),
+      },
     },
   ]
 }
