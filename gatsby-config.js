@@ -11,15 +11,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
 
     // SOURCE FILE SYSTEM
-    {
-      // gatsby-source-filesystem adds the images and pages to the data layer
-      // of Gastby (Accessible through GraphQL).
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   // gatsby-source-filesystem adds the images and pages to the data layer
+    //   // of Gastby (Accessible through GraphQL).
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

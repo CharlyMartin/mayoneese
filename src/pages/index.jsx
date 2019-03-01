@@ -13,9 +13,10 @@ import '../css/pages/home.css'
 
 // Data
 import data from '../data/home-page';
+// import Banner from '../images/banner.svg';
 
 function HomePage(props) {
-  // console.log(bannerSVG);
+  // console.log(Banner);
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />

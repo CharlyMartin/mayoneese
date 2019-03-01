@@ -10,7 +10,7 @@ import pages from '../data/internal-links'
 
 // Component
 function Header(props) {
-  console.log(props);
+  // console.log(props);
 
   return (
     <div className="container">
