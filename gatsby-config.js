@@ -3,7 +3,6 @@ module.exports = {
     title: `Gatsby Starter`,
     description: `The starter file from Charly Martin`,
     author: `Charly Martin`,
-    siteUrl: `https://www.gueely.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,15 +10,15 @@ module.exports = {
     `gatsby-plugin-sharp`,
 
     // SOURCE FILE SYSTEM
-    // {
-    //   // gatsby-source-filesystem adds the images and pages to the data layer
-    //   // of Gastby (Accessible through GraphQL).
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
+    {
+      // gatsby-source-filesystem adds the images and pages to the data layer
+      // of Gastby (Accessible through GraphQL).
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,7 +40,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
 

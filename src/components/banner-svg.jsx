@@ -2,14 +2,20 @@
 import React from 'react';
 
 function BannerSVG({ id, zIndex, top, colour, shade }) {  
-  const style = {
+
+  const divStyle = {
+    position: 'absolute',
+    left: '0',
+    right: '0',
     zIndex,
     top
-  } 
+  }
+
+  const svgInlineStyle = `width: 100%; height:100%`
   
   const svg = {
     __html: `
-      <svg viewBox="0 0 1440 829" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg viewBox="0 0 1440 829" style="${svgInlineStyle}">
         <g id="banner" fill="var(--${colour}-${shade})" stroke="none" stroke-width="1" fill-rule="evenodd">
           <path d="M0,0 L1440,0 L1440,578.048796 C1292.5659,667.712567 1101.23257,738.423463 866,790.181484 C630.767434,841.939505 342.100767,841.939505 0,790.181484 L0,0 Z" id="Path"></path>
         </g>
@@ -19,7 +25,7 @@ function BannerSVG({ id, zIndex, top, colour, shade }) {
 
   return <div className="svg-container"
               id={id}
-              style={style}
+              style={divStyle}
               dangerouslySetInnerHTML={svg} />
 }
 

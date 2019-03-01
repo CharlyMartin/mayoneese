@@ -20,9 +20,10 @@ function HomePage(props) {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <BannerSVG top="0" zIndex="-1" colour="yellow" shade="30" />
-      <BannerSVG top="35px" zIndex="-2" colour="yellow" shade="40" />
-      <BannerSVG top="70px" zIndex="-3" colour="yellow" shade="50" />
+      <BannerSVG top="0" zIndex="-10" colour="yellow" shade="30" />
+      <BannerSVG top="4vh" zIndex="-20" colour="yellow" shade="40" />
+      <BannerSVG top="8vh" zIndex="-30" colour="yellow" shade="50" />
+      <BannerSVG top="12vh" zIndex="-40" colour="orange" shade="40" />
       <div className="container">
         <h1>
           {data.landing.value1}
@@ -67,24 +68,17 @@ function HomePage(props) {
 export default HomePage;
 
 // This page query will be availabe in the props obj under data
-// export const query = graphql`
-//   query homePageQuery {
-//     gatsbyIcon: file(name: {eq: "gatsby-icon"}) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     astronaut: file(name: {eq: "gatsby-astronaut"}) {
-//       childImageSharp {
-//         fixed(width: 125, height: 125) {
-//           ...GatsbyImageSharpFixed
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query homePageQuery {
+    banner: file(name: {eq: "banner"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 
 // {
