@@ -1,12 +1,13 @@
 // Librairies
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+// import { Link, graphql } from 'gatsby'
 // import Img from "gatsby-image"
 
 // Components
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BannerSVG from '../components/banner-svg';
+import Form from '../components/form';
 
 // CSS
 import '../css/pages/home.css';
@@ -32,7 +33,7 @@ function HomePage(props) {
           <BannerSVG top="32vh" zIndex="-90" colour="purple" shade="50" />
         </div>
 
-        <div className="container" id="hero">
+        <section id="hero" className="container">
           <div className="column-layout">
             <div className="column-text">
               <h1>
@@ -40,13 +41,15 @@ function HomePage(props) {
                 <span>{data.landing.value2}</span>
               </h1>
               <h2>{data.landing.description}</h2>
+              <Form />
             </div>
 
             <div className="column-image">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam consequatur commodi odio omnis, et voluptatum, aut labore aliquam nam adipisci velit rem nulla delectus quia itaque molestias maiores ex.
             </div>
           </div>
-        </div>
+        </section>
+
 
       </div>
     </Layout>

@@ -39,10 +39,15 @@ h4 {
 
 /* Body */
 p, .text {
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .text-small {
 
+}
+
+input {
+  font-weight: 500;
+  font-size: var(--s-5);
 }
 

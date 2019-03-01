@@ -1,19 +1,18 @@
 :root {
 /* Box Shadows */
---shadow-grey: 0px 0px 14px rgba(25, 25, 25, 0.05);
+/* --shadow-grey: 0px 0px 14px rgba(25, 25, 25, 0.05);
 --shadow-grey-hover: 0px 0px 14px rgba(25, 25, 25, 0.05);
-
 --shadow-colour: 0px 0px 14px rgba(25, 25, 25, 0.05);
---shadow-colour-hover: 0px 0px 14px rgba(25, 25, 25, 0.05);
+--shadow-colour-hover: 0px 0px 14px rgba(25, 25, 25, 0.05); */
 
 /* Border Radius */
---radius-xs: 0.2rem;
+/* --radius-xs: 0.2rem;
 --radius-sm: 0.4rem;
 --radius-md: 0.6rem;
 --radius-lg: 0.8rem;
---radius-xl: 1.0rem;
+--radius-xl: 1.0rem; */
 
 /* Linear Gradients */
---gradient: (rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3));
+/* --gradient: (rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)); */
 }
 

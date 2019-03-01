@@ -1,5 +1,4 @@
 html,
-body,
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +16,11 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--grey-00);
+  color: var(--grey-90);
 }
 
 *:before,
