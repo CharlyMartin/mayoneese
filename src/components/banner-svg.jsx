@@ -1,32 +1,45 @@
 // Librairies
 import React from 'react';
 
-function BannerSVG({ id, zIndex, top, colour, shade }) {  
+// Helpers
+import { inlineStyle } from '../helpers/functions';
 
-  const divStyle = {
-    position: 'absolute',
-    left: '0',
-    right: '0',
-    zIndex,
-    top
+class BannerSVG extends React.Component {
+  constructor(props) {
+    super(props)
   }
 
-  const svgInlineStyle = `width: 100%; height:100%`
+  render() {
+    const { zIndex, top, colour, shade } = this.props;
   
-  const svg = {
-    __html: `
-      <svg viewBox="0 0 1440 829" style="${svgInlineStyle}">
-        <g id="banner" fill="var(--${colour}-${shade})" stroke="none" stroke-width="1" fill-rule="evenodd">
-          <path d="M0,0 L1440,0 L1440,578.048796 C1292.5659,667.712567 1101.23257,738.423463 866,790.181484 C630.767434,841.939505 342.100767,841.939505 0,790.181484 L0,0 Z" id="Path"></path>
-        </g>
-      </svg>
-    `
-  }
+    const svgStyle = {
+      'position': 'absolute',
+      'left': '0',
+      'right': '0',
+      'z-index': zIndex,
+      'top': top,
+      'height': '100vh',
+    }
+    
+    const svg = {
+      __html: `
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg viewBox="0 0 180 90" style="${inlineStyle(svgStyle)}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Symbols" stroke="none" stroke-width="1" fill-rule="evenodd">
+                <g id="Shape/Banner" fill="var(--${colour}-${shade})">
+                <path d="M0,0 L180,0 L180,62.7555991 C161.570737,72.4899047 137.654071,80.1666003 108.25,85.7856858 C78.8459292,91.4047714 42.7625959,91.4047714 0,85.7856858 L0,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </svg>
+      `
+    }
 
-  return <div className="svg-container"
-              id={id}
-              style={divStyle}
-              dangerouslySetInnerHTML={svg} />
+    return <span
+      className="svg-container"
+      dangerouslySetInnerHTML={svg}
+      style={{overflow: 'hidden'}}
+      />
+  }
 }
 
 export default BannerSVG;

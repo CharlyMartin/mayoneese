@@ -20,4 +20,9 @@ function prefixLocale(locale, path) {
   return `${locale}${path}`;
 }
 
-export { sample, textEllipsis, prefixLocale }
+function inlineStyle(object) {
+  const array = Object.entries(object);
+  return array.map(i => i.join(': ')).join('; ');
+}
+
+export { sample, textEllipsis, prefixLocale, inlineStyle }

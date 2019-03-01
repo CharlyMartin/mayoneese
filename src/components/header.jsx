@@ -1,12 +1,15 @@
-import { StaticQuery, graphql, Link } from 'gatsby';
+// Librairies
+import { Link } from 'gatsby';
 import React from 'react';
-import Img from "gatsby-image";
 
 // SVG
 import logo from '../images/mayoneese.svg';
 
 // Data
-import pages from '../data/internal-links'
+import pages from '../data/internal-links';
+
+// CSS
+import '../css/components/navbar.css';
 
 // Component
 function Header(props) {
@@ -14,14 +17,10 @@ function Header(props) {
 
   return (
     <div className="container">
-      <br/>
-      <br/>
       <Link to={`/${pages.home}`}>
-        <img src={logo} alt="Mayoneese Logo" width="120"/>
+        <img src={logo} alt="Mayoneese Logo" id="logo"/>
         {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
       </Link>
-      <br/>
-      <br/>
     </div>
   )
 }

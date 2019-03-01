@@ -9,30 +9,19 @@ of nested elements is often not actually a value in your scale.
 Stick to px or rem units, it’s the only way to guarantee you’re sticking to the system.
 */
 
-/* :root {
-  --font-12: 12px;
-  --font-14: 14px;
-  --font-16: 16px;
-  --font-18: 18px;
-  --font-20: 20px;
-  --font-24: 24px;
-  --font-30: 30px;
-  --font-36: 36px;
-  --font-48: 48px;
-  --font-60: 60px;
-  --font-72: 72px;
-  --font-90: 90px;
-} */
+/* Quicksand */
+/* variants: [`300`, `400`, `500`, `700`] */
+
+/* Montserrat */
+/* variants: [`300`, `400`, `600` */
 
 /* Headings */
 h1 {
-  /* font-family: 'Oswald'; */
-  /* color: var(--black-dark);
-  font-size: var(--h1-size);
-  font-weight: 800;
-  padding-bottom: var(--space-xl);
-  letter-spacing: -0.02rem;
-  line-height: 1.6; */
+  font-weight: 500;
+  font-size: var(--s-16);
+  letter-spacing: -4px;
+  line-height: 0.6;
+  font-family: 'Quicksand';
 }
 
 h2 {
