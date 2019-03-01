@@ -9,7 +9,7 @@ of nested elements is often not actually a value in your scale.
 Stick to px or rem units, it’s the only way to guarantee you’re sticking to the system.
 */
 
-:root {
+/* :root {
   --font-12: 12px;
   --font-14: 14px;
   --font-16: 16px;
@@ -22,11 +22,11 @@ Stick to px or rem units, it’s the only way to guarantee you’re sticking to 
   --font-60: 60px;
   --font-72: 72px;
   --font-90: 90px;
-}
+} */
 
 /* Headings */
 h1 {
-  font-family: 'Oswald';
+  /* font-family: 'Oswald'; */
   /* color: var(--black-dark);
   font-size: var(--h1-size);
   font-weight: 800;

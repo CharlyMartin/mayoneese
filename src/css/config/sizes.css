@@ -12,11 +12,11 @@ A couple of pixels is basically imperceivable,
 Going from 500px to 520px is a 4% difference.
 */
 
-:root {
+/* :root {
   --size-025: 0.25rem;
   --size-050: 0.50rem;
   --size-075: 0.75rem;
-  /* 16px */
+
   --size-100: 1.00rem;
   --size-120: 1.25rem; 
   --size-150: 1.50rem;
@@ -25,13 +25,30 @@ Going from 500px to 520px is a 4% difference.
   --size-400: 4.00rem;
   --size-600: 6.00rem;
   --size-800: 8.00rem;
-    /* 160px */
+
   --size-1000: 10rem;
   --size-1200: 12rem;
   --size-1600: 16rem;
-  /* 384px */
+
   --size-2400: 24rem;
   --size-3200: 32rem;
   --size-4000: 40rem;
   --size-4800: 48rem;
+} */
+
+:root {
+  --s-0: 0.25rem;
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-20: 5rem;
+  --s-24: 6rem;
+  --s-32: 8rem;
 }
