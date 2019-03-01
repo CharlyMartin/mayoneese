@@ -33,7 +33,8 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "clean": "rm -rf .cache && rm -rf public"
+    "clean": "rm -rf .cache && rm -rf public",
+    "lint": "eslint src/"
   },
   "devDependencies": {
     "eslint": "^5.14.1",
