@@ -10,7 +10,7 @@ exports.handler = function(event, context, callback) {
   // You provide the callback parameter, which is optional, but recommended.
   callback(null, {
     statusCode: 200,
-    body: "Hello, World"
+    body: "<h1>Hello, World</h1>"
     });
 }
 
