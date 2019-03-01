@@ -13,17 +13,19 @@ import '../css/pages/home.css'
 
 // Data
 import data from '../data/home-page';
-// import Banner from '../images/banner.svg';
 
 function HomePage(props) {
-  // console.log(Banner);
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <BannerSVG top="0" zIndex="-10" colour="yellow" shade="30" />
-      <BannerSVG top="4vh" zIndex="-20" colour="yellow" shade="40" />
-      <BannerSVG top="8vh" zIndex="-30" colour="yellow" shade="50" />
-      <BannerSVG top="12vh" zIndex="-40" colour="orange" shade="40" />
+      <div className="svgs">
+        <BannerSVG top="0" zIndex="-10" colour="yellow" shade="30" />
+        <BannerSVG top="4vh" zIndex="-20" colour="yellow" shade="40" />
+        <BannerSVG top="8vh" zIndex="-30" colour="yellow" shade="50" />
+        <BannerSVG top="12vh" zIndex="-40" colour="orange" shade="40" />
+        <BannerSVG top="16vh" zIndex="-50" colour="orange" shade="50" />
+        <BannerSVG top="20vh" zIndex="-60" colour="red" shade="30" />
+      </div>
       <div className="container">
         <h1>
           {data.landing.value1}
