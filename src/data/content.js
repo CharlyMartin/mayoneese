@@ -8,7 +8,7 @@ export default {
     name: 'John',
     email: 'john@travolta.com',
     button: 'Join!',
-    description: 'Join a community of music lovers!'
+    description: 'Join a community of music lovers 🔥'
   },
   problem: {
     title: '',

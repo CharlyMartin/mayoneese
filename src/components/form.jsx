@@ -21,20 +21,20 @@ class Form extends React.Component {
   }
 
   handleChange(event) {
-    const input = event.target.name
-    const value = event.target.value
-    console.log(value)
+    const input = event.target.name;
+    const value = event.target.value;
     this.setState({ [input]: event.target.value })
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value)
-    event.preventDefault()
+    console.log(this.state.name, this.state.email);
+    event.preventDefault();
   }
 
   render() {
-    const { name, email, button } = data.form
-    const honeypot = 'address'
+    const { name, email, button } = data.form;
+    const emailPattern = '(.+)@(.+){2,}\.(.+){2,}'
+    const honeypot = 'address';
 
     return (
       <form
@@ -52,6 +52,10 @@ class Form extends React.Component {
           name="form-name"
           value="contact" />
 
+        {/* Hidden field for bots */}
+        <input name={honeypot} type="text" style={{ display: 'none' }} />
+
+        {/* Name field */}
         <input
           name="name"
           placeholder={name}
@@ -60,16 +64,19 @@ class Form extends React.Component {
           onChange={this.handleChange}
           required={true}
         />
+
+        {/* Email field */}
         <input
           name="email"
           placeholder={email}
           type="text"
           value={this.state.email}
           onChange={this.handleChange}
-          pattern=".+@globex.com"
+          pattern={emailPattern}
           required={true}
         />
-        <input name={honeypot} type="text" style={{ display: 'none' }} />
+
+        {/* Button */}
         <input type="submit" value={button} />
       </form>
     )
