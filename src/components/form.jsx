@@ -70,7 +70,11 @@ class Form extends React.Component {
           value={formName} />
 
         {/* Hidden field for bots */}
-        <input name={honeypot} type="text" style={{ display: 'none' }} />
+        <input
+          name={honeypot}
+          type="text"
+          value=""
+          style={{ display: 'none' }} />
 
         {/* Name field */}
         <input
