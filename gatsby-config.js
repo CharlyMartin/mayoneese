@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Starter`,
     description: `The starter file from Charly Martin`,
     author: `Charly Martin`,
+    siteUrl: `https://mayoneese.club/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
