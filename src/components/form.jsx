@@ -5,7 +5,7 @@ import React from 'react'
 import '../css/components/form.css'
 
 // Data
-import data from '../data/content';
+import data from '../data/content'
 
 class Form extends React.Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class Form extends React.Component {
     this.state = {
       name: '',
       email: '',
+      address: '',
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -32,10 +33,25 @@ class Form extends React.Component {
   }
 
   render() {
-    const { name, email, button } = data.form;
+    const { name, email, button } = data.form
+    const honeypot = 'address'
 
     return (
-      <form onSubmit={this.handleSubmit} action="" className="email-form">
+      <form
+        onSubmit={this.handleSubmit}
+        className="email-form"
+        method="POST"
+        action="/"
+        netlify
+        data-netlify="true"
+        netlify-honeypot={honeypot}
+      >
+        {/* This input is for netflify */}
+        <input
+          type="hidden"
+          name="form-name"
+          value="contact" />
+
         <input
           name="name"
           placeholder={name}
@@ -53,6 +69,7 @@ class Form extends React.Component {
           pattern=".+@globex.com"
           required={true}
         />
+        <input name={honeypot} type="text" style={{ display: 'none' }} />
         <input type="submit" value={button} />
       </form>
     )
