@@ -3,21 +3,22 @@
 }
 
 #hero h1 {
-  padding-top: var(--s-16);
+  padding-top: var(--s-24);
   color: white;
 }
 
 #hero h1 span {
   display: block;
-  color: var(--purple-60);
+  color: var(--purple-50);
+  padding-top: var(--s-8);
   font-family: 'Quicksand';
 }
 
 #hero h2 {
-  color: var(--purple-90);
+  color: var(--grey-70);
   font-size: var(--s-5);
   font-weight: 400;
-  padding-top: var(--s-16);
+  padding-top: var(--s-20);
   letter-spacing: 0.2px;
 }
 
@@ -31,7 +32,7 @@
 }
 
 #hero form {
-  padding-top: var(--s-16); 
+  padding-top: var(--s-20); 
 }
 
 #hero .description {

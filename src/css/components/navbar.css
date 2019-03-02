@@ -1,5 +1,5 @@
 #logo {
-  width: 100px;
+  width: var(--s-32);
   fill: red;
-  margin: var(--s-10) 0;
+  margin-top: var(--s-12);
 }

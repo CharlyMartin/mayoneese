@@ -18,7 +18,7 @@ class BannerSVG extends React.Component {
       'right': '0',
       'z-index': zIndex,
       'top': top,
-      'height': '95vh',
+      // 'height': '95vh',
     }
     
     const svg = {

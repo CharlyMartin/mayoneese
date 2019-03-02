@@ -16,7 +16,7 @@ Stick to px or rem units, it’s the only way to guarantee you’re sticking to 
 /* variants: [`300`, `400`, `600` */
 
 /* Headings */
-h1 {
+h1, .title {
   font-weight: 500;
   font-size: var(--s-16);
   letter-spacing: -4px;

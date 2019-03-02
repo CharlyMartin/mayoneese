@@ -38,7 +38,7 @@ function HomePage(props) {
             <div className="column-text">
               <h1>
                 {data.landing.value1}
-                <span>{data.landing.value2}</span>
+                <span className="title">{data.landing.value2}</span>
               </h1>
               <h2>{data.landing.description}</h2>
               

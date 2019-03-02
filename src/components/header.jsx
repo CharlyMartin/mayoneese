@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 // SVG
-import logo from '../images/mayoneese.svg';
+import logo from '../images/logo.png';
 
 // Data
 import pages from '../data/internal-links';
