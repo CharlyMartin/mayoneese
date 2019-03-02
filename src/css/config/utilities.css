@@ -1,7 +1,7 @@
 :root {
 /* Box Shadows */
-/* --shadow-grey: 0px 0px 14px rgba(25, 25, 25, 0.05);
---shadow-grey-hover: 0px 0px 14px rgba(25, 25, 25, 0.05);
+--shadow-light: 0px 0px 20px var(--grey-00);
+/* --shadow-grey-hover: 0px 0px 14px rgba(25, 25, 25, 0.05);
 --shadow-colour: 0px 0px 14px rgba(25, 25, 25, 0.05);
 --shadow-colour-hover: 0px 0px 14px rgba(25, 25, 25, 0.05); */
 

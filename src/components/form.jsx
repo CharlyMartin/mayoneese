@@ -4,6 +4,9 @@ import React from 'react'
 // CSS
 import '../css/components/form.css'
 
+// Data
+import data from '../data/content';
+
 class Form extends React.Component {
   constructor(props) {
     super(props)
@@ -29,23 +32,28 @@ class Form extends React.Component {
   }
 
   render() {
+    const { name, email, button } = data.form;
+
     return (
       <form onSubmit={this.handleSubmit} action="" className="email-form">
         <input
           name="name"
-          placeholder="John"
+          placeholder={name}
           type="text"
           value={this.state.name}
           onChange={this.handleChange}
+          required={true}
         />
         <input
           name="email"
-          placeholder="john@gmail.com"
+          placeholder={email}
           type="text"
           value={this.state.email}
           onChange={this.handleChange}
+          pattern=".+@globex.com"
+          required={true}
         />
-        <input type="submit" value="Go!" />
+        <input type="submit" value={button} />
       </form>
     )
   }

@@ -13,7 +13,7 @@ import Form from '../components/form';
 import '../css/pages/home.css';
 
 // Data
-import data from '../data/home-page';
+import data from '../data/content';
 
 function HomePage(props) {
   return (
@@ -23,14 +23,14 @@ function HomePage(props) {
       <div id="home-page">
         <div className="svgs">
           <BannerSVG top="0" zIndex="-10" colour="yellow" shade="30" />
-          <BannerSVG top="4vh" zIndex="-20" colour="yellow" shade="40" />
-          <BannerSVG top="8vh" zIndex="-30" colour="yellow" shade="50" />
-          <BannerSVG top="12vh" zIndex="-40" colour="orange" shade="40" />
-          <BannerSVG top="16vh" zIndex="-50" colour="orange" shade="50" />
-          <BannerSVG top="20vh" zIndex="-60" colour="red" shade="40" />
-          <BannerSVG top="24vh" zIndex="-70" colour="red" shade="50" />
-          <BannerSVG top="28vh" zIndex="-80" colour="purple" shade="40" />
-          <BannerSVG top="32vh" zIndex="-90" colour="purple" shade="50" />
+          <BannerSVG top="5vh" zIndex="-20" colour="yellow" shade="40" />
+          <BannerSVG top="10vh" zIndex="-30" colour="yellow" shade="50" />
+          <BannerSVG top="15vh" zIndex="-40" colour="orange" shade="40" />
+          <BannerSVG top="20vh" zIndex="-50" colour="orange" shade="50" />
+          <BannerSVG top="25vh" zIndex="-60" colour="red" shade="40" />
+          <BannerSVG top="30vh" zIndex="-70" colour="red" shade="50" />
+          <BannerSVG top="35vh" zIndex="-80" colour="purple" shade="40" />
+          <BannerSVG top="40vh" zIndex="-90" colour="purple" shade="50" />
         </div>
 
         <section id="hero" className="container">
@@ -41,7 +41,9 @@ function HomePage(props) {
                 <span>{data.landing.value2}</span>
               </h1>
               <h2>{data.landing.description}</h2>
+              
               <Form />
+              <p className="description">{data.form.description}</p>
             </div>
 
             <div className="column-image">

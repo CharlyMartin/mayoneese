@@ -14,7 +14,7 @@
 }
 
 #hero h2 {
-  color: var(--yellow-90);
+  color: var(--purple-90);
   font-size: var(--s-5);
   font-weight: 400;
   padding-top: var(--s-16);
@@ -32,4 +32,11 @@
 
 #hero form {
   padding-top: var(--s-16); 
+}
+
+#hero .description {
+  padding-top: var(--s-4);
+  padding-left: var(--s-8);
+  font-size: var(--s-3);
+  color: var(--grey-90)
 }
