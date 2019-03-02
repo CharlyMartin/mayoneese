@@ -1,4 +1,5 @@
-html, body, * {
+html,
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,10 +7,24 @@ html, body, * {
   text-decoration: none;
   font-size: 16px;
   font: inherit;
+  font-size: 100%;
   line-height: 1.6;
+  vertical-align: baseline;
+  font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* Reduces font boldness */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
-*:before, *:after {
-	content: '';
-	content: none;
+body {
+  background: var(--grey-00);
+  color: var(--grey-90);
+}
+
+*:before,
+*:after {
+  content: '';
+  content: none;
 }
