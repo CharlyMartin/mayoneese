@@ -60,7 +60,7 @@ class Form extends React.Component {
         name={formName}
         method="POST"
         action="/"
-        data-netlify="true"
+        data-netlify={true}
         netlify-honeypot={honeypot}
       >
         {/* This input is for netflify */}
