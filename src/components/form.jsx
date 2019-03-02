@@ -5,7 +5,7 @@ import React from 'react'
 import '../css/components/form.css'
 
 // Data
-import data from '../data/content'
+import data from '../data/form'
 
 class Form extends React.Component {
   constructor(props) {
@@ -48,7 +48,7 @@ class Form extends React.Component {
   };
 
   render() {
-    const { name, email, button } = data.form;
+    const { name, email, button } = data;
     const emailPattern = '(.+)@(.+){2,}\.(.+){2,}';
     const formName = 'contact'
     const honeypot = 'address';

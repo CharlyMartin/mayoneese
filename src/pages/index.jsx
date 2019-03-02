@@ -13,7 +13,7 @@ import Form from '../components/form';
 import '../css/pages/home.css';
 
 // Data
-import data from '../data/content';
+import data from '../data/home';
 
 function HomePage(props) {
   return (
