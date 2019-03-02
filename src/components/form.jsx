@@ -23,40 +23,42 @@ class Form extends React.Component {
   handleChange(event) {
     const input = event.target.name;
     const value = event.target.value;
-    this.setState({ [input]: event.target.value })
+    this.setState({ [input]: value })
   }
 
-  handleSubmit(event) {
-    console.log(this.state.name, this.state.email);
-    event.preventDefault();
-  }
+  // handleSubmit(event) {
+    
+
+  // }
 
   // Post form data somewhere
-  // handleSubmit(event) {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...this.state })
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error));
+  handleSubmit(event) {
+    console.log(this.state.name, this.state.email);
 
-  //   event.preventDefault();
-  // };
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    event.preventDefault();
+  };
 
   render() {
     const { name, email, button } = data.form;
-    const emailPattern = '(.+)@(.+){2,}\.(.+){2,}'
+    const emailPattern = '(.+)@(.+){2,}\.(.+){2,}';
+    const formName = 'contact'
     const honeypot = 'address';
 
     return (
       <form
         onSubmit={this.handleSubmit}
         className="email-form"
-        name="contact"
+        name={formName}
         method="POST"
         action="/"
-        netlify
         data-netlify="true"
         netlify-honeypot={honeypot}
       >
@@ -64,7 +66,7 @@ class Form extends React.Component {
         <input
           type="hidden"
           name="form-name"
-          value="contact" />
+          value={formName} />
 
         {/* Hidden field for bots */}
         <input name={honeypot} type="text" style={{ display: 'none' }} />
