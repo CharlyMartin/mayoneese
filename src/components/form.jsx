@@ -31,6 +31,19 @@ class Form extends React.Component {
     event.preventDefault();
   }
 
+  // Post form data somewhere
+  // handleSubmit(event) {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...this.state })
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch(error => alert(error));
+
+  //   event.preventDefault();
+  // };
+
   render() {
     const { name, email, button } = data.form;
     const emailPattern = '(.+)@(.+){2,}\.(.+){2,}'
@@ -40,6 +53,7 @@ class Form extends React.Component {
       <form
         onSubmit={this.handleSubmit}
         className="email-form"
+        name="contact"
         method="POST"
         action="/"
         netlify
