@@ -1,0 +1,52 @@
+.email-form input {
+  height: var(--s-16);
+  margin-right: var(--s-1);
+  padding: 0 var(--s-8);
+  /* border: none; */
+}
+
+/* .email-form input:required {
+  border: 1px solid var(--purple-40);
+} */
+
+.email-form input:required {
+  box-shadow: none;
+}
+
+.email-form ::placeholder {
+  color: var(--grey-70);
+}
+
+.email-form #mce-FNAME {
+  width: 30%;
+  font-family: 'Quicksand';
+  font-size: var(--s-4);
+  color: var(--gray-70);
+  border-radius: var(--s-16) 0 0 var(--s-16);
+}
+
+.email-form #mce-EMAIL {
+  width: 48%;
+  font-family: 'Quicksand';
+  font-size: var(--s-4);
+  color: var(--gray-70);
+}
+
+.email-form #mc-embedded-subscribe {
+  color: white;
+  background: var(--purple-50);
+  font-family: 'Quicksand';
+  font-weight: 500;
+  font-size: var(--s-5);
+  width: 20%;
+  border-radius: 0 var(--s-16) var(--s-16) 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.email-form #mc-embedded-subscribe:hover {
+  background: var(--purple-60);
+}
+
+
+
