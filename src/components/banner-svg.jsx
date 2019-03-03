@@ -35,9 +35,8 @@ class BannerSVG extends React.Component {
     }
 
     return <span
-      className="svg-container"
+      className="svg"
       dangerouslySetInnerHTML={svg}
-      style={{overflow: 'hidden'}}
       />
   }
 }

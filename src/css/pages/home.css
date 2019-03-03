@@ -2,6 +2,10 @@
   height: 120vh;
 }
 
+#hero .svgs {
+  overflow: hidden;
+}
+
 #hero h1 {
   padding-top: var(--s-24);
   color: white;

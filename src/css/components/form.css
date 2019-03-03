@@ -20,6 +20,7 @@
 .email-form input[name="name"] {
   width: 30%;
   font-family: 'Quicksand';
+  font-size: var(--s-4);
   color: var(--gray-70);
   border-radius: var(--s-16) 0 0 var(--s-16);
 }
@@ -27,6 +28,7 @@
 .email-form input[name="email"] {
   width: 48%;
   font-family: 'Quicksand';
+  font-size: var(--s-4);
   color: var(--gray-70);
 }
 
@@ -35,7 +37,7 @@
   background: var(--purple-50);
   font-family: 'Quicksand';
   font-weight: 500;
-  font-size: var(--s-6);
+  font-size: var(--s-5);
   width: 20%;
   border-radius: 0 var(--s-16) var(--s-16) 0;
   cursor: pointer;
