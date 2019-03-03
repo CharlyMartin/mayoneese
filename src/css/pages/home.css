@@ -32,8 +32,12 @@
 
 #hero .column-image {
   flex: 0 0 45%;
-  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+/* #hero .column-image .svg */
 
 #hero form {
   padding-top: var(--s-20); 
@@ -43,5 +47,5 @@
   padding-top: var(--s-4);
   padding-left: var(--s-8);
   font-size: var(--s-3);
-  color: var(--grey-90)
+  color: var(--grey-80)
 }

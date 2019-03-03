@@ -7,6 +7,7 @@ import React from 'react'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BannerSVG from '../components/banner-svg';
+import BlobSVG from '../components/blog-svg';
 import MailchimpForm from '../components/mailchimp-form';
 
 // CSS
@@ -15,7 +16,7 @@ import '../css/pages/home.css';
 // Data
 import data from '../data/home';
 
-function HomePage(props) {
+function HomePage() {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -47,7 +48,7 @@ function HomePage(props) {
             </div>
 
             <div className="column-image">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam consequatur commodi odio omnis, et voluptatum, aut labore aliquam nam adipisci velit rem nulla delectus quia itaque molestias maiores ex.
+              <BlobSVG colour="grey" width="300px" shade="00" rotate="350"/>
             </div>
           </div>
         </section>

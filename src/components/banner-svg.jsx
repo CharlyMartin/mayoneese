@@ -15,7 +15,8 @@ class BannerSVG extends React.Component {
     const svgStyle = {
       'position': 'absolute',
       'left': '0',
-      'right': '0',
+      'min-width': '1400px',
+      // 'right': '0',
       'z-index': zIndex,
       'top': top,
     }
@@ -33,7 +34,7 @@ class BannerSVG extends React.Component {
       `
     }
 
-    return <span
+    return <div
       className="svg"
       dangerouslySetInnerHTML={svg}
       />

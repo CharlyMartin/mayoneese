@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="160px" height="90px" viewBox="0 0 160 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Shape/Banner" fill="#FFFFFF">
-            <path d="M0,0 L160,0 L160,62.7555991 C143.618433,72.4899047 122.359174,80.1666003 96.2222222,85.7856858 C70.0852704,91.4047714 38.0111964,91.4047714 0,85.7856858 L0,0 Z" id="Path"></path>
-        </g>
-    </g>
-</svg>

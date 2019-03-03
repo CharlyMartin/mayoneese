@@ -1,5 +1,11 @@
-<svg viewBox="0 0 1440 829" version="1.1">
-    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M0,0 L1440,0 L1440,578.048796 C1292.5659,667.712567 1101.23257,738.423463 866,790.181484 C630.767434,841.939505 342.100767,841.939505 0,790.181484 L0,0 Z" id="Path"></path>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="90px" viewBox="0 0 180 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shape/Banner" fill="#FFFFFF">
+            <path d="M0,0 L180,0 L180,62.7555991 C161.570737,72.4899047 137.654071,80.1666003 108.25,85.7856858 C78.8459292,91.4047714 42.7625959,91.4047714 0,85.7856858 L0,0 Z" id="Path"></path>
+        </g>
     </g>
 </svg>
