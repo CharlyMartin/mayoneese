@@ -29,24 +29,9 @@ class MailchimpForm extends React.Component {
     // this.setState({ [input]: value })
   }
 
-  // encode(data){
-  //   return Object.keys(data)
-  //     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-  //     .join("&");
-  // }
-
-  // Post form data somewhere
   handleSubmit(event) {
-    console.log(this.state.name, this.state.email);
-    // event.preventDefault();
-
-    // fetch("/", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: this.encode({ "form-name": "contact", ...this.state })
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error));
+    console.log(event.target);
+    event.preventDefault();
   };
 
   render() {
@@ -55,7 +40,6 @@ class MailchimpForm extends React.Component {
     return (
       <div id="mc_embed_signup">
         <form
-          onSubmit={this.handleSubmit}
           className="email-form validate"
           action="https://club.us20.list-manage.com/subscribe/post?u=287e3065a33862e29be073e7a&amp;id=0cd6c680d7"
           method="post"
@@ -63,6 +47,7 @@ class MailchimpForm extends React.Component {
           name="mc-embedded-subscribe-form"
           target="_blank"
           noValidate
+          // onSubmit={this.handleSubmit}
         >
 
           {/* Name field */}
