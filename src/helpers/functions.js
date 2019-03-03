@@ -1,28 +1,21 @@
-function sample(arr, number) {
-  // Shuffling array
-  for (let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  
-  // Return the x first items
-  return arr.slice(0, number);
-}
-
-
 function textEllipsis(str, limit = 110) {
-  if (str.length > limit) return (`${str.substring(0, limit - 1).trim()}...`);
+  if (str.length > limit) return `${str.substring(0, limit - 1).trim()}...`
   return str
 }
 
-
-function prefixLocale(locale, path) {
-  return `${locale}${path}`;
-}
-
 function inlineStyle(object) {
-  const array = Object.entries(object);
-  return array.map(i => i.join(': ')).join('; ');
+  const array = Object.entries(object)
+  return array.map(i => i.join(': ')).join('; ')
 }
 
-export { sample, textEllipsis, prefixLocale, inlineStyle }
+function capWord(str) {
+  if (str[0] === undefined) return ''
+  return str[0].toUpperCase() + str.substring(1)
+}
+
+function capitalise(string) {
+  const words = string.split(' ')
+  return words.map(word => capWord(word)).join(' ')
+}
+
+export { textEllipsis, inlineStyle, capitalise }
