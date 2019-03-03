@@ -7,7 +7,7 @@ import React from 'react'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BannerSVG from '../components/banner-svg';
-import Form from '../components/form';
+import MailchimpForm from '../components/mailchimp-form';
 
 // CSS
 import '../css/pages/home.css';
@@ -42,7 +42,7 @@ function HomePage(props) {
               </h1>
               <h2>{data.landing.description}</h2>
               
-              <Form />
+              <MailchimpForm />
               <p className="description">{data.form.description}</p>
             </div>
 
