@@ -16,12 +16,14 @@ function Header(props) {
   // console.log(props);
 
   return (
-    <div className="container">
-      <Link to={`/${pages.home}`}>
-        <img src={logo} alt="Mayoneese Logo" id="logo"/>
-        {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
-      </Link>
-    </div>
+    <header className="navbar">
+      <div className="container">
+        <Link to={`/${pages.home}`}>
+          <img src={logo} alt="Mayoneese Logo" id="logo"/>
+          {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
+        </Link>
+      </div>
+    </header>
   )
 }
 

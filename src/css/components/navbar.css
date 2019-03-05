@@ -1,5 +1,13 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
 #logo {
   width: var(--s-32);
   fill: red;
-  margin-top: var(--s-12);
+  margin-top: var(--s-8);
 }
