@@ -51,7 +51,9 @@ function HomePage() {
               </div>
 
               <div className="column-image">
-                <BlobSVG colour="grey" width="300px" shade="00" rotate="350"/>
+                <div className="svg-container">
+                  <BlobSVG colour="grey" width="100%" shade="00" rotate={-10}/>
+                </div>
               </div>
             </div>
           </div>

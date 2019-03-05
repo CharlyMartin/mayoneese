@@ -51,3 +51,8 @@
   font-size: var(--s-3);
   color: var(--grey-80)
 }
+
+#hero .svg-container {
+  width: 350px;
+  height: 350px;
+}
