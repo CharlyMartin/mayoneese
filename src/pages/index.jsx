@@ -6,8 +6,7 @@ import React from 'react'
 // Components
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BannerSVG from '../components/banner-svg';
-import Banner from '../components/banner'
+import BannerList from '../components/banner-list';
 import BlobSVG from '../components/blog-svg';
 import MailchimpForm from '../components/mailchimp-form';
 
@@ -34,18 +33,8 @@ function HomePage() {
           <BannerSVG top="35vh" zIndex="-80" colour="purple" shade="40" />
           <BannerSVG top="40vh" zIndex="-90" colour="purple" shade="50" />
         </div> */}
-        <div className="banners">
-          <Banner top="0" zIndex="-10" angle="0" colour="yellow" shade="30" />
-          <Banner top="2vh" zIndex="-20" angle="1" colour="yellow" shade="40" />
-          <Banner top="4vh" zIndex="-30" angle="2" colour="yellow" shade="50" />
-          <Banner top="6vh" zIndex="-40" angle="3" colour="orange" shade="40" />
-          <Banner top="8vh" zIndex="-50" angle="4" colour="orange" shade="50" />
-          <Banner top="10vh" zIndex="-60" angle="5" colour="red" shade="40" />
-          <Banner top="12vh" zIndex="-70" angle="6" colour="red" shade="50" />
-          <Banner top="14vh" zIndex="-80" angle="7" colour="purple" shade="40" />
-          <Banner top="16vh" zIndex="-90" angle="8" colour="purple" shade="50" />
-        </div>
 
+        <BannerList />
         
         <section id="hero">
           <div className="container">
@@ -67,7 +56,6 @@ function HomePage() {
             </div>
           </div>
         </section>
-
 
       </div>
     </Layout>

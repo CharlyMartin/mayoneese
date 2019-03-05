@@ -25,6 +25,5 @@ body {
 
 *:before,
 *:after {
-  content: '';
   content: none;
 }
