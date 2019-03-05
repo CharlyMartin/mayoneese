@@ -9,8 +9,14 @@
   border: 1px solid var(--purple-40);
 } */
 
+/* Firefox */
 .email-form input:required {
   box-shadow: none;
+}
+
+.email-form input :focus {
+  outline: none;
+  border: 1px solid red
 }
 
 .email-form ::placeholder {
