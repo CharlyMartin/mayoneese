@@ -24,7 +24,7 @@ class BannerList extends Component {
 
   setSpread() {
     const spread = this.anim.speard;
-    this.anim.speard += 3;
+    this.anim.speard += 4;
     console.log(this.anim.speard);
     return spread;
   }
