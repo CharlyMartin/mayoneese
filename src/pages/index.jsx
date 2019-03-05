@@ -8,12 +8,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BannerList from '../components/banner-list';
 import MailchimpForm from '../components/mailchimp-form';
-
-// SVG Components
-// import BlobSVG from '../components/blob-svg';
-// import MusicSVG from '../components/music-svg';
-// import VinylSVG from '../components/vinyl-svg';
-// import HeadphonesSVG from '../components/headphones-svg';
+// import HeroSVGs from '../components/hero-svgs';
 
 // CSS
 import '../css/pages/home.css';
@@ -43,14 +38,9 @@ function HomePage() {
                 <p className="description">{data.form.description}</p>
               </div>
 
-              {/* <div className="column-image">
-                <div className="svgs-container">
-                  <MusicSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
-                  <VinylSVG colour="purple" width="var(--s-8)" shade="50" rotate={-20} />
-                  <HeadphonesSVG colour="purple" width="var(--s-8)" shade="50" rotate={-30} />
-                  <BlobSVG colour="grey" width="100%" shade="00" rotate={-10} zIndex="-10" />
-                </div>
-              </div> */}
+              <div className="column-image">
+                {/* <HeroSVGs /> */}
+              </div>
 
             </div>
           </div>

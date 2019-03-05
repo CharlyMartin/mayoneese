@@ -1,0 +1,31 @@
+.hero-svgs {
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+
+.hero-svgs #blob {
+  align-self: center;
+  grid-column: 1 / span 15;
+  grid-row: 1 / span 15;
+}
+
+.hero-svgs #music {
+  align-self: center;
+  grid-column: 4 / span 3;
+  grid-row: 6 / span 3;
+}
+
+.hero-svgs #headphones {
+  align-self: center;
+  grid-column: 11 / span 3;
+  grid-row: 4 / span 3;
+}
+
+.hero-svgs #vinyl {
+  align-self: center;
+  grid-column: 10 / span 3;
+  grid-row: 10 / span 3;
+}

@@ -18,10 +18,6 @@ class BannerList extends Component {
 
   // }
 
-  computeSpread() {
-    
-  }
-
   setSpread() {
     const spread = this.anim.speard;
     this.anim.speard += 4;
