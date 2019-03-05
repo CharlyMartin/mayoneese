@@ -41,6 +41,7 @@ class BannerList extends Component {
       position: 'relative',
       width: '100%',
       height: `130vh`,
+      overflow: 'hidden'
     }
 
     return (

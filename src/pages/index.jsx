@@ -7,8 +7,13 @@ import React from 'react'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BannerList from '../components/banner-list';
-import BlobSVG from '../components/blog-svg';
 import MailchimpForm from '../components/mailchimp-form';
+
+// SVG Components
+import BlobSVG from '../components/blob-svg';
+import MusicSVG from '../components/music-svg';
+import VinylSVG from '../components/vinyl-svg';
+import HeadphonesSVG from '../components/headphones-svg';
 
 // CSS
 import '../css/pages/home.css';
@@ -22,18 +27,6 @@ function HomePage() {
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       
       <div id="home-page">
-        {/* <div className="svgs">
-          <BannerSVG top="0" zIndex="-10" colour="yellow" shade="30" />
-          <BannerSVG top="5vh" zIndex="-20" colour="yellow" shade="40" />
-          <BannerSVG top="10vh" zIndex="-30" colour="yellow" shade="50" />
-          <BannerSVG top="15vh" zIndex="-40" colour="orange" shade="40" />
-          <BannerSVG top="20vh" zIndex="-50" colour="orange" shade="50" />
-          <BannerSVG top="25vh" zIndex="-60" colour="red" shade="40" />
-          <BannerSVG top="30vh" zIndex="-70" colour="red" shade="50" />
-          <BannerSVG top="35vh" zIndex="-80" colour="purple" shade="40" />
-          <BannerSVG top="40vh" zIndex="-90" colour="purple" shade="50" />
-        </div> */}
-
         <BannerList />
         
         <section id="hero">
@@ -51,8 +44,11 @@ function HomePage() {
               </div>
 
               <div className="column-image">
-                <div className="svg-container">
-                  <BlobSVG colour="grey" width="100%" shade="00" rotate={-10}/>
+                <div className="svgs-container">
+                  <MusicSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
+                  <VinylSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
+                  <HeadphonesSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
+                  <BlobSVG colour="grey" width="100%" shade="00" rotate={-10} zIndex="-10" />
                 </div>
               </div>
             </div>
