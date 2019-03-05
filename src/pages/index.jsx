@@ -46,8 +46,8 @@ function HomePage() {
               <div className="column-image">
                 <div className="svgs-container">
                   <MusicSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
-                  <VinylSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
-                  <HeadphonesSVG colour="purple" width="var(--s-8)" shade="50" rotate={-10} />
+                  <VinylSVG colour="purple" width="var(--s-8)" shade="50" rotate={-20} />
+                  <HeadphonesSVG colour="purple" width="var(--s-8)" shade="50" rotate={-30} />
                   <BlobSVG colour="grey" width="100%" shade="00" rotate={-10} zIndex="-10" />
                 </div>
               </div>

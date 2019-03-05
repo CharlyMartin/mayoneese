@@ -56,26 +56,30 @@
   width: 350px;
   height: 350px;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
 }
 
 #hero .svgs-container #blob {
-  grid-column: 1 / span 10;
-  grid-row: 1 / span 10;
+  align-self: center;
+  grid-column: 1 / span 15;
+  grid-row: 1 / span 15;
 }
 
 #hero .svgs-container #music {
-  grid-column: 3 / span 2;
-  grid-row: 3 / span 2;
+  align-self: center;
+  grid-column: 4 / span 3;
+  grid-row: 6 / span 3;
 }
 
 #hero .svgs-container #headphones {
-  grid-column: 8 / span 2;
-  grid-row: 4 / span 2;
+  align-self: center;
+  grid-column: 11 / span 3;
+  grid-row: 4 / span 3;
 }
 
 #hero .svgs-container #vinyl {
-  grid-column: 6 / span 2;
-  grid-row: 7 / span 2;
+  align-self: center;
+  grid-column: 10 / span 3;
+  grid-row: 10 / span 3;
 }
