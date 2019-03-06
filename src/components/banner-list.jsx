@@ -7,30 +7,26 @@ import Banner from './banner';
 class BannerList extends Component {
   constructor(props) {
     super(props)
-    
-    this.anim = {
-      angle: 0,
-      speard: 0,
-    }
   }
 
   // setAngle() {
 
   // }
 
-  setSpread() {
-    const spread = this.anim.speard;
-    this.anim.speard += 4;
-    console.log(this.anim.speard);
-    return spread;
-  }
+  // setSpread() {
+    
+  //   const spread = this.props.speard;
+  //   this.setState({spread: spread + 3});
+  //   console.log(spread);
+  //   return spread;
+  // }
 
-  componentWillUnmount() {
-    this.anim = {
-      angle: 0,
-      speard: 0,
-    }
-  }
+  // componentWillUnmount() {
+  //   this.state = {
+  //     angle: 0,
+  //     speard: 0,
+  //   }
+  // }
   
   render() {
     const style = {
@@ -42,15 +38,16 @@ class BannerList extends Component {
 
     return (
       <div className="banners" style={style}>
-        <Banner spread={this.setSpread()} zIndex="-10" angle="0" colour="yellow" shade="30" />
-        <Banner spread={this.setSpread()} zIndex="-20" angle="0" colour="yellow" shade="40" />
-        <Banner spread={this.setSpread()} zIndex="-30" angle="0" colour="yellow" shade="50" />
-        <Banner spread={this.setSpread()} zIndex="-40" angle="0" colour="orange" shade="40" />
-        <Banner spread={this.setSpread()} zIndex="-50" angle="0" colour="orange" shade="50" />
-        <Banner spread={this.setSpread()} zIndex="-60" angle="0" colour="red" shade="40" />
-        <Banner spread={this.setSpread()} zIndex="-70" angle="0" colour="red" shade="50" />
-        <Banner spread={this.setSpread()} zIndex="-80" angle="0" colour="purple" shade="40" />
-        <Banner spread={this.setSpread()} zIndex="-90" angle="0" colour="purple" shade="50" />
+        <Banner spread="0" zIndex="-10" angle="0" colour="yellow" shade="30" />
+        {/* <Banner spread="3" zIndex="-20" angle="0" colour="yellow" shade="40" />
+        <Banner spread="6" zIndex="-30" angle="0" colour="yellow" shade="50" />
+        <Banner spread="9" zIndex="-40" angle="0" colour="orange" shade="40" />
+        <Banner spread="12" zIndex="-50" angle="0" colour="orange" shade="50" />
+        <Banner spread="15" zIndex="-60" angle="0" colour="red" shade="40" />
+        <Banner spread="18" zIndex="-70" angle="0" colour="red" shade="50" />
+        <Banner spread="21" zIndex="-80" angle="0" colour="purple" shade="40" />
+        <Banner spread="24" zIndex="-90" angle="0" colour="purple" shade="50" />
+        <Banner spread="-70" zIndex="-10" angle="0" colour="purple" shade="50" /> */}
       </div>
     );
   }

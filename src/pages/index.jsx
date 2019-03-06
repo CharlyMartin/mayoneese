@@ -22,7 +22,7 @@ function HomePage() {
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       
       <div id="home-page">
-        <BannerList />
+        <BannerList spread={3} />
         
         <section id="hero">
           <div className="container">
@@ -45,6 +45,31 @@ function HomePage() {
             </div>
           </div>
         </section>
+
+        <section id="problem">
+          <div className="container">
+          
+          </div>
+        </section>
+
+        <section id="why">
+          <div className="container">
+          
+          </div>
+        </section>
+
+        <section id="how">
+          <div className="container">
+          
+          </div>
+        </section>
+
+        <section id="what">
+          <div className="container">
+          
+          </div>
+        </section>
+
 
       </div>
     </Layout>
