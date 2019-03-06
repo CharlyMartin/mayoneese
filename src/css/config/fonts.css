@@ -67,8 +67,10 @@ a:hover, .link:hover {
 }
 
 .text-small {
+  font-weight: 600;
+  letter-spacing: 0.6px;
   font-size: var(--s-3);
-  color: var(--grey-90);
+  color: var(--grey-80);
 }
 
 input {

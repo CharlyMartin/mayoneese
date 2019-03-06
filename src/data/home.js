@@ -5,7 +5,7 @@ export default {
     description: "Get one awesome music track in your inbox weekly. For free. You're welcome.",
   },
   form: {
-    description: 'Join a community of music lovers 🔥'
+    description: 'Sign up! The music sounds better with you 🔥'
   },
   problem: {
     title: 'Mainstream music is… bleh',

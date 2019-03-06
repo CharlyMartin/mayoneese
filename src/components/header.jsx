@@ -2,14 +2,15 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-// SVG
+// Images
 import logo from '../images/logo.png';
+import Blob from './blob-svg';
 
 // Data
 import pages from '../data/internal-links';
 
 // CSS
-import '../css/components/navbar.css';
+import './header.css';
 
 // Component
 function Header(props) {
@@ -17,10 +18,20 @@ function Header(props) {
 
   return (
     <header className="navbar">
-      <div className="container">
+      <div className="container"> 
         <Link to={`/${pages.home}`}>
-          <img src={logo} alt="Mayoneese Logo" id="logo"/>
           {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
+          <span className="navbar-content">
+            <img src={logo} alt="Mayoneese Logo" id="logo" />
+            <Blob
+              width="270px"
+              colour="yellow"
+              shade="10"
+              top="-190px"
+              left="-65px"
+              rotate="180"
+            />
+          </span>
         </Link>
       </div>
     </header>

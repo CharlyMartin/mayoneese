@@ -12,7 +12,7 @@ import A from '../components/a';
 import BlobList from '../components/blob-list';
 
 // CSS
-import '../css/pages/home.css';
+import './index.css';
 
 // Data
 import data from '../data/home';

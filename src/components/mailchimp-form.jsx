@@ -2,7 +2,7 @@
 import React from 'react'
 
 // CSS
-import '../css/components/mailchimp-form.css'
+import './mailchimp-form.css'
 
 // Data
 import data from '../data/form'
