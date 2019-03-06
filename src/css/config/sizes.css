@@ -27,6 +27,7 @@ Going from 500px to 520px is a 4% difference.
   --s-20: 5rem;
   --s-24: 6rem;
   --s-32: 8rem;
+  --s-40: 10rem;
 }
 
 /* :root {
