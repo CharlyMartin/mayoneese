@@ -13,7 +13,7 @@ Stick to px or rem units, it’s the only way to guarantee you’re sticking to 
 /* variants: [`300`, `400`, `500`, `700`] */
 
 /* Montserrat */
-/* variants: [`300`, `400`, `600` */
+/* variants: `300`, `400`, `600`, `700` */
 
 /* Headings */
 h1, .title {
@@ -25,7 +25,11 @@ h1, .title {
 }
 
 h2 {
-
+  font-weight: 500;
+  font-size: var(--s-10);
+  letter-spacing: -2px;
+  font-family: 'Quicksand';
+  padding-bottom: var(--s-6);
 }
 
 h3 {
@@ -39,11 +43,18 @@ h4 {
 
 /* Body */
 p, .text {
-  /* font-size: 16px; */
+  font-size: var(--s-4);
+  font-family: 'Overpass';
+}
+
+a, .link {
+  text-decoration: underline;
+  text-decoration-color: var(--purple-70);
 }
 
 .text-small {
-
+  font-size: var(--s-3);
+  color: var(--grey-90);
 }
 
 input {

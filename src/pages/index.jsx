@@ -32,10 +32,10 @@ function HomePage() {
                   {data.landing.value1}
                   <span className="title">{data.landing.value2}</span>
                 </h1>
-                <h2>{data.landing.description}</h2>
+                <h3>{data.landing.description}</h3>
               
                 <MailchimpForm />
-                <p className="description">{data.form.description}</p>
+                <p className="description text-small">{data.form.description}</p>
               </div>
 
               <div className="column-image">
@@ -48,25 +48,25 @@ function HomePage() {
 
         <section id="problem">
           <div className="container">
-          
+            <h2>{data.problem.title}</h2>
           </div>
         </section>
 
         <section id="why">
           <div className="container">
-          
+            <h2>{data.why.title}</h2>
           </div>
         </section>
 
         <section id="how">
           <div className="container">
-          
+            <h2>{data.how.title}</h2>
           </div>
         </section>
 
         <section id="what">
           <div className="container">
-          
+            <h2>{data.what.title}</h2>
           </div>
         </section>
 

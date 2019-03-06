@@ -10,7 +10,7 @@ html,
   font-size: 100%;
   line-height: 1.6;
   vertical-align: baseline;
-  font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
+  font-family: -apple-system, system-ui, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   /* Reduces font boldness */
   -webkit-font-smoothing: antialiased;

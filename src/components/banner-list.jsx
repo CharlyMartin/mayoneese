@@ -32,7 +32,7 @@ class BannerList extends Component {
     const style = {
       position: 'relative',
       width: '100%',
-      height: `130vh`,
+      height: `105vh`,
       overflow: 'hidden'
     }
 
