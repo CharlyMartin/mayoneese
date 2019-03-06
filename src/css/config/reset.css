@@ -18,10 +18,6 @@ html,
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  background: white;
-}
-
 *:before,
 *:after {
   content: none;

@@ -1,11 +1,19 @@
 // import { Link } from 'gatsby'
-import React from 'react'
+import React from 'react';
+
+// Components
+import MailchimpForm from './mailchimp-form';
+
+// CSS
+import './footer.css';
 
 function Footer() {
   return (
-    <div className="container">
-      <h1>I am a Footer</h1>
-    </div>
+    <footer className="footer">
+      <div className="container-sm">
+        <MailchimpForm />
+      </div>
+    </footer>
   )
 }
 
