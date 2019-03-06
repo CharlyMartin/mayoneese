@@ -23,13 +23,14 @@ function Header(props) {
           {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
           <span className="navbar-content">
             <img src={logo} alt="Mayoneese Logo" id="logo" />
+            
             <Blob
               width="270px"
               colour="yellow"
-              shade="10"
-              top="-190px"
-              left="-65px"
-              rotate="180"
+              shade="00"
+              top="-200px"
+              left="-80px"
+              rotate="65"
             />
           </span>
         </Link>

@@ -29,8 +29,6 @@ h2 {
   font-size: var(--s-10);
   letter-spacing: -1px;
   font-family: 'Quicksand';
-  padding-bottom: var(--s-10);
-  color: var(--purple-80);
 }
 
 h3 {

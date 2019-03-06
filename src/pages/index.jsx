@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 import BannerList from '../components/banner-list';
 import MailchimpForm from '../components/mailchimp-form';
 import A from '../components/a';
-import BlobList from '../components/blob-list';
+import H2 from '../components/h2'
 
 // CSS
 import './index.css';
@@ -47,54 +47,57 @@ function HomePage() {
           </section>
         </BannerList>
 
-        <BlobList>
-          <div className="features">
+        
+        <div className="features">
 
-            <section id="problem">
-              <div className="container-sm">
+          <section id="problem">
+            <div className="container-sm">
+              <div className="text-left">
 
-                <h2>{data.problem.title}</h2>
+                <H2 colour="purple" position="right">{data.problem.title}</H2>
+
                 <span className="first-patagraph">
                   <p>{data.problem.text1}</p>
                   <A href={data.problem.link}>
                     {data.problem.linkText}
                   </A>
                 </span>
+
                 <p>{data.problem.text2}</p>
                 <p className="solution">{data.problem.solution}</p>
 
               </div>
-            </section>
+            </div>
+          </section>
 
-            <section id="why">
-              <div className="container-sm">
-                <div className="text-right">
-                  <h2>{data.why.title}</h2>
-                  <p>{data.why.text}</p>
-                </div>
+          <section id="why">
+            <div className="container-sm">
+              <div className="text-right">
+                <H2 colour="red" position="left">{data.why.title}</H2>
+                <p>{data.why.text}</p>
               </div>
-            </section>
+            </div>
+          </section>
 
-            <section id="how">
-              <div className="container-sm">
-                <div className="text-left">
-                  <h2>{data.how.title}</h2>
-                  <p>{data.how.text}</p>
-                </div>
+          <section id="how">
+            <div className="container-sm">
+              <div className="text-left">
+                <H2 colour="orange" position="right">{data.how.title}</H2>
+                <p>{data.how.text}</p>
               </div>
-            </section>
+            </div>
+          </section>
 
-            <section id="what">
-              <div className="container-sm">
-                <div className="text-right">
-                  <h2>{data.what.title}</h2>
-                  <p>{data.what.text}</p>
-                </div>
+          <section id="what">
+            <div className="container-sm">
+              <div className="text-right">
+                <H2 colour="yellow" position="left">{data.what.title}</H2>
+                <p>{data.what.text}</p>
               </div>
-            </section>
-          </div>
-        </BlobList>
-
+            </div>
+          </section>
+          
+        </div>
       </div>
     </Layout>
   )

@@ -20,11 +20,15 @@ export default {
     text: 'At Mayoneese, we believe that listening to great music everyday can make your life way better. We dig out the web and bring our best best findings to you. We have the coolest jobs.'
   },
   how: {
-    title: 'Be cool at parties',
-    text: 'We want to make you feel. We’re looking for one thing: music that makes you want to smile, dance, move, jump or bang your head on the closest wall. You remember that feeling of listening to a great track for the first time? Image that every week.'
+    title: 'We want to make you feel.',
+    text: 'We’re looking for one thing: music that makes you want to smile, dance, move, jump or bang your head on the closest wall. You remember that feeling of listening to a great track for the first time? Image that every week.'
   },
   what: {
     title: 'House, Disco & Electro',
     text: 'We send you the best of disco, house and electronic music every week: hidden gems that deserve more attention and the old forgotten tracks that still work.'
+  },
+  footer: {
+    title: "Join now!",
+    description: "And be that person who plays good music at parties"
   }
 }
