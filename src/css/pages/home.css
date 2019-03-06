@@ -80,6 +80,11 @@ section {
   color: var(--purple-50);
 }
 
+#problem .solution {
+  color: var(--purple-50);
+  font-weight: 400;
+}
+
 #why h2 {
   color: var(--red-50);
 }

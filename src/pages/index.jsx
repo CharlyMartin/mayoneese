@@ -61,7 +61,7 @@ function HomePage() {
                   </A>
                 </span>
                 <p>{data.problem.text2}</p>
-                <p>{data.problem.solution}</p>
+                <p className="solution">{data.problem.solution}</p>
 
               </div>
             </section>

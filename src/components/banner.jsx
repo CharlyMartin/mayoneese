@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = ({colour, shade, children, zIndex, spread, angle}) => {
   
   const style = {
-    minHeight: '99vh',
+    minHeight: '98vh',
     width: '120vw',
     background: `var(--${colour}-${shade})`,
     borderRadius: '0% 0% 60% 60% / 0% 0% 50% 25%',

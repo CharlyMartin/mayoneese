@@ -11,7 +11,7 @@ export default {
     title: 'Mainstream music is… bleh',
     text1: 'Listening to music from mainstream media is frustrating. It’s the same overplayed tracks that all sound similar, when they are not exactly the same. ',
     text2: 'The problem is that most of us don’t know where to look for alternatives, or don’t have time for it. So we often default to what is served to us and change tunes like we swipe Tinder profiles. We know the feeling.',
-    linkText: 'Like here...',
+    linkText: 'Like this one.',
     link: 'https://www.youtube.com/watch?v=7HWn9NGgQks',
     solution: 'That’s where Mayoneese comes to the rescue!',
   },
