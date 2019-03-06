@@ -27,29 +27,38 @@ h1, .title {
 h2 {
   font-weight: 500;
   font-size: var(--s-10);
-  letter-spacing: -2px;
+  letter-spacing: -1px;
+  font-family: 'Quicksand';
+  padding-bottom: var(--s-10);
+  color: var(--purple-80);
+}
+
+h3 {
+  font-weight: 400;
+  font-size: var(--s-6);
+  letter-spacing: -1.5px;
   font-family: 'Quicksand';
   padding-bottom: var(--s-6);
 }
 
-h3 {
-
-}
-
-h4 {
-
-}
-
-
 /* Body */
 p, .text {
-  font-size: var(--s-4);
+  font-size: var(--s-5);
+  font-weight: 300;
   font-family: 'Overpass';
+  letter-spacing: 0.6px;
+  color: var(--grey-90);
+  padding-bottom: var(--s-6);
+  line-height: 1.8;
 }
 
 a, .link {
-  text-decoration: underline;
-  text-decoration-color: var(--purple-70);
+  font-weight: 600;
+  color: var(--purple-50);
+  font-size: var(--s-5);
+  font-family: 'Overpass';
+  letter-spacing: 0.6px;
+  line-height: 1.8;
 }
 
 .text-small {

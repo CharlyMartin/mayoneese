@@ -16,3 +16,7 @@
 /* --gradient: (rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)); */
 }
 
+.text-center {
+  text-align: center;
+}
+

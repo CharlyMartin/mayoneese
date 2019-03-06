@@ -6,6 +6,10 @@
   z-index: 10;
 }
 
+.navbar a {
+  border-bottom: transparent;
+}
+
 #logo {
   width: var(--s-32);
   fill: red;

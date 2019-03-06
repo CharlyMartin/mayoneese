@@ -16,9 +16,9 @@ const Banner = ({colour, shade, children, zIndex, spread, angle}) => {
   }
   
   return (
-    <div style={style}>
-      {children}
-    </div>
+    <div style={style} />
+    //   {children}
+    // </div>
   );
 };
 

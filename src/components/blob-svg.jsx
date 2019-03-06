@@ -1,13 +1,17 @@
 // Librairies
 import React from 'react';
 
-function MusicSVG(props) {
-  const { width, rotate, colour, shade, zIndex } = props;
+function BlobSVG(props) {
+  const { width, rotate, colour, shade, left, top, right } = props;
 
   const style = {
+    position: 'absolute',
+    left,
+    top, 
+    right,
     width,
     transform: `rotate(${rotate}deg)`,
-    zIndex
+    zIndex: "-10",
   }
   
   const shape = {
@@ -28,7 +32,7 @@ function MusicSVG(props) {
   )
 }
 
-export default MusicSVG;
+export default BlobSVG;
 
 
 // function BannerSVG({ data }) {

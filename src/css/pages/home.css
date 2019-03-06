@@ -1,11 +1,23 @@
+section {
+  /* padding-bottom: var(--s-32); */
+  min-height: 70vh;
+}
+
 #hero {
   padding-top: var(--s-32);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 0;
-  min-height: 95vh;
+  z-index: 10;
+}
+
+.features {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 #hero h1 {
@@ -24,7 +36,8 @@
   font-size: var(--s-6);
   font-weight: 300;
   padding-top: var(--s-20);
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
+  font-family: 'Overpass';
   /* text-shadow: 0 0 40px var(--grey-00); */
 }
 
@@ -46,4 +59,38 @@
 #hero .description {
   padding-top: var(--s-4);
   padding-left: var(--s-8);
+}
+
+
+
+
+
+#problem span {
+  padding-bottom: var(--s-6);
+  display: block;
+}
+
+#problem span p {
+  display: inline;
+}
+
+/* h2 {
+  color: var(--purple-70);
+} */
+
+
+#problem h2 {
+  color: var(--purple-50);
+}
+
+#why h2 {
+  color: var(--red-50);
+}
+
+#how h2 {
+  color: var(--orange-50);
+}
+
+#what h2 {
+  color: var(--yellow-50);
 }
