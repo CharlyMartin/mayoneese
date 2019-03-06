@@ -1,8 +1,3 @@
-section {
-  /* padding-bottom: var(--s-32); */
-  min-height: 70vh;
-}
-
 #hero {
   padding-top: var(--s-32);
   position: absolute;
@@ -12,12 +7,8 @@ section {
   z-index: 10;
 }
 
-.features {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+section {
+  padding-bottom: var(--s-32);
 }
 
 #hero h1 {
@@ -42,15 +33,9 @@ section {
 }
 
 #hero .column-text {
-  flex: 0 0 55%;
+  flex: 0 0 60%;
 }
 
-#hero .column-image {
-  flex: 0 0 45%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 
 #hero form {
   padding-top: var(--s-20); 
@@ -63,8 +48,6 @@ section {
 
 
 
-
-
 #problem span {
   padding-bottom: var(--s-6);
   display: block;
@@ -74,9 +57,23 @@ section {
   display: inline;
 }
 
-/* h2 {
-  color: var(--purple-70);
-} */
+.features {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.features .text-left {
+  width: 75%;
+  margin-right: auto;
+}
+
+.features .text-right {
+  width: 75%;
+  margin-left: auto;
+}
 
 
 #problem h2 {

@@ -49,8 +49,10 @@ function HomePage() {
 
         <BlobList>
           <div className="features">
+
             <section id="problem">
-              <div className="container-sm text-centered">
+              <div className="container-sm">
+
                 <h2>{data.problem.title}</h2>
                 <span className="first-patagraph">
                   <p>{data.problem.text1}</p>
@@ -59,28 +61,35 @@ function HomePage() {
                   </A>
                 </span>
                 <p>{data.problem.text2}</p>
-                <p><p>{data.problem.solution}</p></p>
+                <p>{data.problem.solution}</p>
+
               </div>
             </section>
 
             <section id="why">
               <div className="container-sm">
-                <h2>{data.why.title}</h2>
-                <p>{data.why.text}</p>
+                <div className="text-right">
+                  <h2>{data.why.title}</h2>
+                  <p>{data.why.text}</p>
+                </div>
               </div>
             </section>
 
             <section id="how">
               <div className="container-sm">
-                <h2>{data.how.title}</h2>
-                <p>{data.how.text}</p>
+                <div className="text-left">
+                  <h2>{data.how.title}</h2>
+                  <p>{data.how.text}</p>
+                </div>
               </div>
             </section>
 
             <section id="what">
               <div className="container-sm">
-                <h2>{data.what.title}</h2>
-                <p>{data.what.text}</p>
+                <div className="text-right">
+                  <h2>{data.what.title}</h2>
+                  <p>{data.what.text}</p>
+                </div>
               </div>
             </section>
           </div>
