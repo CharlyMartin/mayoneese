@@ -1,0 +1,7 @@
+.blob {
+  position: absolute;
+  z-index: -10;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease;
+}

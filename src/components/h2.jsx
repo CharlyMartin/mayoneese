@@ -1,6 +1,6 @@
 // Librairies
 import React, { Component } from 'react'
-import Blob from './blob-svg'
+import Blob from './blob';
 
 // CSS
 import './h2.css'

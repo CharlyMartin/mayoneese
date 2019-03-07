@@ -4,7 +4,7 @@ import React from 'react';
 
 // Images
 import logo from '../images/logo.png';
-import Blob from './blob-svg';
+import Blob from './blob';
 
 // Data
 import pages from '../data/internal-links';

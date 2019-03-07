@@ -1,20 +1,18 @@
 // Librairies
 import React from 'react';
 
-function BlobSVG(props) {
+// CSS
+import './blob.css';
+
+function Blob(props) {
   const { width, rotate, colour, shade, left, top, right } = props;
 
   const style = {
-    position: 'absolute',
     left,
     top, 
     right,
     width,
     transform: `rotate(${rotate}deg)`,
-    zIndex: "-10",
-    transitonProperty: 'transform',
-    transitionDuration: '4s',
-    transitionTimingFunction: `ease`,
   }
   
   const shape = {
@@ -25,17 +23,21 @@ function BlobSVG(props) {
     `
   }
 
+  const isDark = () => {
+    return (Number(shade) > 20) ? 'dark' : 'light';
+  }
+
   return (
    <svg
-      id="blob"
       viewBox="0 0 399 350"
+      className={`blob ${isDark()}`}
       style={style}
       dangerouslySetInnerHTML={shape}
       />
   )
 }
 
-export default BlobSVG;
+export default Blob;
 
 
 // function BannerSVG({ data }) {
