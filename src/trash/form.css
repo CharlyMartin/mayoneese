@@ -5,10 +5,6 @@
   /* border: none; */
 }
 
-/* .email-form input:required {
-  border: 1px solid var(--purple-40);
-} */
-
 /* Firefox */
 .email-form input:required {
   box-shadow: none;
@@ -53,6 +49,4 @@
 .email-form input[type="submit"]:hover {
   background: var(--purple-60);
 }
-
-
 

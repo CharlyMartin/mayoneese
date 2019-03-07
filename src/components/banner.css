@@ -1,0 +1,32 @@
+.banner {
+  width: 120%;
+  position: relative;
+  left: -10%;
+  padding: var(--s-12);
+}
+
+.banner.top {
+  border-radius: 60% 60% 0% 0% / 50% 25% 0% 0%;
+}
+
+.banner.bottom {
+  border-radius: 0% 0% 60% 60% / 0% 0% 50% 25%;
+}
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+  .banner {
+    width: 120%;
+    position: relative;
+    left: -10%;  
+    padding: var(--s-12);
+  }
+
+  .banner.bottom {
+    border-radius: 0% 0% 60% 60% / 0% 0% 20% 10%;
+  }
+
+  .banner.top {
+    border-radius: 60% 60% 0% 0% / 20% 10% 0% 0%;
+  }
+}

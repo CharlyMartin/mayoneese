@@ -21,7 +21,7 @@ class BannerList extends Component {
       <div className="banners" style={style}>
         {this.props.children}
         <Banner spread="0" zIndex="-10" angle="0" colour="yellow" shade="30" />
-        {/* <Banner spread="0.5" zIndex="-30" angle="0" colour="purple" shade="50" /> */}
+        <Banner spread="1" zIndex="-20" angle="0" colour="yellow" shade="40" />
         {/* <Banner spread="8" zIndex="-30" angle="0" colour="yellow" shade="50" />
         <Banner spread="12" zIndex="-40" angle="0" colour="orange" shade="40" />
         <Banner spread="16" zIndex="-50" angle="0" colour="orange" shade="50" />

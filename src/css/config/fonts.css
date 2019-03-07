@@ -78,3 +78,31 @@ input {
   font-size: var(--s-5);
 }
 
+
+/* Media Queries  */
+@media screen and (max-width: 1200px) {
+  /* Up to that screen width, the following rules apply: */
+
+}
+
+@media screen and (max-width: 992px) {
+  /* Up to that screen width, the following rules apply: */
+
+}
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+  h1, .title {
+    font-size: var(--s-12);
+    letter-spacing: -3px;
+    line-height: 0.8;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Up to that screen width, the following rules apply: */
+
+}
+
+
+

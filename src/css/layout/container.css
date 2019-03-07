@@ -6,32 +6,37 @@
 }
 
 .container-sm {
-  width: 800px;
+  width: 864px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Laptop 11 inches */
-@media screen and (max-width: 1070px) {
+/* Media Queries  */
+@media screen and (max-width: 1200px) {
   /* Up to that screen width, the following rules apply: */
   .container {
+    width: 950px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Up to that screen width, the following rules apply: */
+  .container, .container-sm {
     width: 750px;
   }
 }
 
-/* iPad */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   /* Up to that screen width, the following rules apply: */
   .container, .container-sm {
-    width: 520px;
+    width: 550px;
   }
 }
 
-/* Mobile (Iphone, Pixel, Galaxy) */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 576px) {
   /* Up to that screen width, the following rules apply: */
   .container, .container-sm {
-    width: 310px;
+    width: 320px;
   }
 }
 

@@ -2,7 +2,6 @@
   height: var(--s-16);
   margin-right: var(--s-1);
   padding: 0 var(--s-8);
-  /* border: none; */
 }
 
 /* .email-form input:required {
@@ -17,13 +16,11 @@
   outline: none;
 }
 
-
-
 .email-form ::placeholder {
   color: var(--grey-70);
 }
 
-.email-form #mce-FNAME {
+.email-form .name {
   width: 30%;
   font-family: 'Quicksand';
   font-size: var(--s-4);
@@ -31,14 +28,14 @@
   border-radius: var(--s-16) 0 0 var(--s-16);
 }
 
-.email-form #mce-EMAIL {
-  width: 48%;
+.email-form .email {
+  width: 47%;
   font-family: 'Quicksand';
   font-size: var(--s-4);
   color: var(--gray-70);
 }
 
-.email-form #mc-embedded-subscribe {
+.email-form .button {
   color: white;
   background: var(--purple-50);
   font-family: 'Quicksand';
@@ -50,9 +47,42 @@
   text-align: left;
 }
 
-.email-form #mc-embedded-subscribe:hover {
+.email-form .button:hover {
   background: var(--purple-60);
 }
+
+
+
+/* Media Queries  */
+@media screen and (max-width: 1200px) {
+  /* Up to that screen width, the following rules apply: */
+}
+
+@media screen and (max-width: 992px) {
+  /* Up to that screen width, the following rules apply: */
+
+}
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+
+}
+
+@media screen and (max-width: 576px) {
+  /* Up to that screen width, the following rules apply: */
+  .email-form .input {
+    display: block;
+    width: 100%;
+    border-radius: var(--s-16);
+    margin-top: var(--s-2);
+  }
+
+  .email-form .button {
+    text-align: center;
+  }
+}
+
+
 
 
 

@@ -6,7 +6,7 @@ import React from 'react'
 // Components
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BannerList from '../components/banner-list';
+import Banner from '../components/banner';
 import MailchimpForm from '../components/mailchimp-form';
 import A from '../components/a';
 import H2Blob from '../components/h2'
@@ -23,29 +23,22 @@ function HomePage() {
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       
       <div id="home-page">
-        <BannerList>
+        <Banner colour="yellow" shade="30" position="bottom">
           <section id="hero">
             <div className="container">
-              <div className="column-layout">
-                <div className="column-text">
-                  <h1>
-                    {data.landing.value1}
-                    <span className="title">{data.landing.value2}</span>
-                  </h1>
-                  <h3>{data.landing.description}</h3>
-                
-                  <MailchimpForm />
-                  <p className="description text-small">{data.form.description}</p>
-                </div>
-
-                <div className="column-image">
-                  {/* <HeroSVGs /> */}
-                </div>
-
+              <div className="hero-content">
+                <h1>
+                  {data.landing.value1}
+                  <span className="title">{data.landing.value2}</span>
+                </h1>
+                <h3>{data.landing.description}</h3>
+              
+                <MailchimpForm />
+                <p className="description text-small">{data.form.description}</p>
               </div>
             </div>
           </section>
-        </BannerList>
+        </Banner>
 
         
         <div className="features">

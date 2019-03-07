@@ -65,7 +65,7 @@ class H2Blob extends Component {
           shade="10"
           width="300px"
           top="10%"
-          right={position === 'right' ? '-80%' : '110%'}
+          right={position === 'right' ? '-70%' : '110%'}
           rotate={this.state.angle}
         />
 

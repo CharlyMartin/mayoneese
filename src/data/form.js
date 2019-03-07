@@ -1,5 +1,5 @@
 export default {
-  name: 'Charly',
-  email: 'charly@gmail.com',
+  name: 'John',
+  email: 'john@email.com',
   button: 'Join!',
 }

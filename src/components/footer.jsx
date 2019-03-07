@@ -13,8 +13,8 @@ import data from '../data/home'
 
 function Footer() {
   return (
+    <Banner colour="grey" shade="10" position="top">
     <footer className="footer">
-      <Banner colour="grey" shade="10" zIndex="-10" spread="0" angle="-180" />
       <div className="container-sm">
         <div className="footer-content">
           <h2>{data.footer.title}</h2>
@@ -23,6 +23,7 @@ function Footer() {
         <MailchimpForm />
       </div>
     </footer>
+    </Banner>
   )
 }
 

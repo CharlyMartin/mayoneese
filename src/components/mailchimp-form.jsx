@@ -60,7 +60,7 @@ class MailchimpForm extends React.Component {
           <input
             name="FNAME"
             type="text"
-            className=""
+            className="name input"
             id="mce-FNAME"
             value={this.state.name}
             placeholder={name}
@@ -72,7 +72,7 @@ class MailchimpForm extends React.Component {
           <input
             name="EMAIL"
             type="email"
-            className="required email"
+            className="required email input"
             id="mce-EMAIL"
             value={this.state.email}
             placeholder={email}
@@ -116,7 +116,7 @@ class MailchimpForm extends React.Component {
           <input
             type="submit"
             name="subscribe"
-            className="button"
+            className="button input"
             value={button}
             id="mc-embedded-subscribe"
           />

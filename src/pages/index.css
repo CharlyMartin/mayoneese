@@ -1,10 +1,6 @@
 #hero {
-  padding-top: var(--s-40);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+  padding-top: var(--s-24);
+  padding-bottom: var(--s-10);
 }
 
 section {
@@ -32,8 +28,8 @@ section {
   /* text-shadow: 0 0 40px var(--grey-00); */
 }
 
-#hero .column-text {
-  flex: 0 0 60%;
+#hero .hero-content {
+  width: 65%;
 }
 
 
@@ -59,7 +55,7 @@ section {
 
 .features {
   overflow: hidden;
-  padding: var(--s-16) 0;
+  padding: var(--s-32) 0;
 }
 
 .features .text-left {
@@ -75,4 +71,55 @@ section {
 #problem .solution {
   color: var(--purple-50);
   font-weight: 600;
+}
+
+
+
+
+
+
+
+/* Media Queries  */
+@media screen and (max-width: 1200px) {
+  /* Up to that screen width, the following rules apply: */
+  #hero .hero-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Up to that screen width, the following rules apply: */
+  #hero .hero-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+  #hero {
+    padding-top: var(--s-24);
+  }
+  
+  /* #hero .hero-content {
+    width: 100%;
+  } */
+
+  #hero h1 span {
+    padding-top: var(--s-4);
+  }
+
+  #hero h3 {
+    font-size: var(--s-5);
+    padding-top: var(--s-12);
+    letter-spacing: 0.3px;
+  }
+
+  #hero form {
+    padding-top: var(--s-12); 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Up to that screen width, the following rules apply: */
+
 }
