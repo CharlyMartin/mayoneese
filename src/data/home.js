@@ -28,7 +28,7 @@ export default {
     text: 'We send you the best of disco, house and electronic music every week: hidden gems that deserve more attention and the old forgotten tracks that still work. La creme de la creme'
   },
   footer: {
-    title: "Join now!",
-    description: "And be that person who plays good music at parties"
+    title: "Join mayoneese now!",
+    description: "And be that cool person who plays great music at parties 🔥"
   }
 }

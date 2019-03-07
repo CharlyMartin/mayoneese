@@ -29,12 +29,13 @@ h2 {
   font-size: var(--s-10);
   letter-spacing: -1px;
   font-family: 'Quicksand';
+  padding-bottom: var(--s-4);
 }
 
 h3 {
   font-weight: 400;
   font-size: var(--s-6);
-  letter-spacing: -1.5px;
+  letter-spacing: -1px;
   font-family: 'Quicksand';
   padding-bottom: var(--s-6);
 }

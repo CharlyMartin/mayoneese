@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = ({colour, shade, children, zIndex, spread, angle}) => {
+const Banner = ({colour, shade, zIndex, spread, angle}) => {
   
   const style = {
     minHeight: '98vh',
@@ -9,16 +9,14 @@ const Banner = ({colour, shade, children, zIndex, spread, angle}) => {
     borderRadius: '0% 0% 60% 60% / 0% 0% 50% 25%',
     position: 'absolute',
     top: `${spread}vh`,
-    left: '-10vw',
-    right: '-10vw',
+    left: '-10v%',
+    right: '-10%',
     zIndex,
     transform: `rotate(${angle}deg)`
   }
   
   return (
     <div style={style} />
-    //   {children}
-    // </div>
   );
 };
 

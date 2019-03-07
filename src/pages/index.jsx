@@ -98,6 +98,7 @@ function HomePage() {
           </section>
           
         </div>
+        
       </div>
     </Layout>
   )

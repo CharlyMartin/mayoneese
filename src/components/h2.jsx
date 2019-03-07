@@ -43,7 +43,7 @@ class H2Blob extends Component {
     const style = {
       color: `var(--${colour}-50)`,
       position: `relative`,
-      paddingBottom: `var(--s-12)`,
+      paddingBottom: `var(--s-10)`,
     }
 
     return (
@@ -53,7 +53,7 @@ class H2Blob extends Component {
         <Blob
           colour={colour}
           shade="00"
-          width="500px"
+          width="550px"
           top="0%"
           right={position === 'right' ? '-40%' : '50%'}
           // left={(position === 'left' ? "-100%" : "")}

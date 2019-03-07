@@ -1,4 +1,23 @@
 .footer {
-  background: var(--grey-10);
-  padding: var(--s-16) 0;
+  padding-top: var(--s-32);
+  padding-bottom: var(--s-40);
+  position: relative;
+  overflow: hidden;
 }
+
+.footer .footer-content {
+  padding-bottom: var(--s-8);
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: var(--s-8);
+  letter-spacing: -0.5px;
+  padding-bottom: var(--s-2);
+  color: var(--purple-60);
+}
+
+.footer p {
+  color: var(--purple-90);
+}
+
