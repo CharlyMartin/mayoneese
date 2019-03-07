@@ -5,7 +5,7 @@ import Blob from './blob-svg'
 // CSS
 import './h2.css'
 
-class H2 extends Component {
+class H2Blob extends Component {
   constructor(props) {
     super(props)
   }
@@ -28,7 +28,7 @@ class H2 extends Component {
           shade="00"
           width="500px"
           top="0%"
-          right={(position === 'right' ? "-55%" : "60%")}
+          right={(position === 'right' ? "-40%" : "50%")}
           // left={(position === 'left' ? "-100%" : "")}
           rotate="20"
         />
@@ -38,16 +38,25 @@ class H2 extends Component {
           shade="10"
           width="300px"
           top="10%"
-          right={(position === 'right' ? "-75%" : "120%")}
+          right={(position === 'right' ? "-80%" : "110%")}
           rotate="50"
         />
 
         <Blob
           colour={colour}
           shade="30"
-          width="100px"
+          width="120px"
           top="30%"
-          right={(position === 'right' ? "120%" : "-10%")}
+          right={(position === 'right' ? "115%" : "-10%")}
+          rotate="50"
+        />
+
+        <Blob
+          colour={colour}
+          shade="40"
+          width="25px"
+          top="35%"
+          right={(position === 'right' ? "135%" : "-20%")}
           rotate="50"
         />
       </div>
@@ -55,4 +64,4 @@ class H2 extends Component {
   }
 }
 
-export default H2
+export default H2Blob

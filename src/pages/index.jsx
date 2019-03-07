@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 import BannerList from '../components/banner-list';
 import MailchimpForm from '../components/mailchimp-form';
 import A from '../components/a';
-import H2 from '../components/h2'
+import H2Blob from '../components/h2'
 
 // CSS
 import './index.css';
@@ -54,7 +54,7 @@ function HomePage() {
             <div className="container-sm">
               <div className="text-left">
 
-                <H2 colour="purple" position="right">{data.problem.title}</H2>
+                <H2Blob colour="purple" position="right">{data.problem.title}</H2Blob>
 
                 <span className="first-patagraph">
                   <p>{data.problem.text1}</p>
@@ -73,7 +73,7 @@ function HomePage() {
           <section id="why">
             <div className="container-sm">
               <div className="text-right">
-                <H2 colour="red" position="left">{data.why.title}</H2>
+                <H2Blob colour="red" position="left">{data.why.title}</H2Blob>
                 <p>{data.why.text}</p>
               </div>
             </div>
@@ -82,7 +82,7 @@ function HomePage() {
           <section id="how">
             <div className="container-sm">
               <div className="text-left">
-                <H2 colour="orange" position="right">{data.how.title}</H2>
+                <H2Blob colour="orange" position="right">{data.how.title}</H2Blob>
                 <p>{data.how.text}</p>
               </div>
             </div>
@@ -91,7 +91,7 @@ function HomePage() {
           <section id="what">
             <div className="container-sm">
               <div className="text-right">
-                <H2 colour="yellow" position="left">{data.what.title}</H2>
+                <H2Blob colour="yellow" position="left">{data.what.title}</H2Blob>
                 <p>{data.what.text}</p>
               </div>
             </div>
