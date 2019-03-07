@@ -1,8 +1,5 @@
 .footer {
-  padding-top: var(--s-32);
-  padding-bottom: var(--s-40);
-  position: relative;
-  overflow: hidden;
+  padding: var(--s-20) 0;
 }
 
 .footer .footer-content {
