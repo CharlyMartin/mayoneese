@@ -5,14 +5,41 @@ import Blob from './blob-svg'
 // CSS
 import './h2.css'
 
+// Helpers
+import { getRandonNumber } from '../helpers/functions'
+
 class H2Blob extends Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      angle: 0,
+    }
+
+    this.rotateBlob = this.rotateBlob.bind(this)
+  }
+
+  rotateBlob() {
+    this.intervalID = setInterval(() => {
+      this.setState({ angle: (this.state.angle + getRandonNumber(0, 180)) })
+    }, getRandonNumber(3000, 6000))
+  }
+
+  componentDidMount() {
+    this.setState({
+      angle: getRandonNumber(0, 360),
+    })
+
+    this.rotateBlob()
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.intervalID)
   }
 
   render() {
     const { colour, position } = this.props
-    
+
     const style = {
       color: `var(--${colour}-50)`,
       position: `relative`,
@@ -28,9 +55,9 @@ class H2Blob extends Component {
           shade="00"
           width="500px"
           top="0%"
-          right={(position === 'right' ? "-40%" : "50%")}
+          right={position === 'right' ? '-40%' : '50%'}
           // left={(position === 'left' ? "-100%" : "")}
-          rotate="20"
+          rotate={this.state.angle}
         />
 
         <Blob
@@ -38,8 +65,8 @@ class H2Blob extends Component {
           shade="10"
           width="300px"
           top="10%"
-          right={(position === 'right' ? "-80%" : "110%")}
-          rotate="50"
+          right={position === 'right' ? '-80%' : '110%'}
+          rotate={this.state.angle}
         />
 
         <Blob
@@ -47,8 +74,8 @@ class H2Blob extends Component {
           shade="30"
           width="120px"
           top="30%"
-          right={(position === 'right' ? "115%" : "-10%")}
-          rotate="50"
+          right={position === 'right' ? '115%' : '-10%'}
+          rotate={this.state.angle}
         />
 
         <Blob
@@ -56,12 +83,12 @@ class H2Blob extends Component {
           shade="40"
           width="25px"
           top="35%"
-          right={(position === 'right' ? "135%" : "-20%")}
-          rotate="50"
+          right={position === 'right' ? '135%' : '-20%'}
+          rotate={this.state.angle}
         />
       </div>
     )
   }
 }
 
-export default H2Blob
+export default H2Blob;

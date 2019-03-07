@@ -18,4 +18,10 @@ function capitalise(string) {
   return words.map(word => capWord(word)).join(' ')
 }
 
-export { textEllipsis, inlineStyle, capitalise }
+function getRandonNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+
+export { textEllipsis, inlineStyle, capitalise, getRandonNumber }
