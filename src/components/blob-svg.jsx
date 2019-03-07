@@ -13,7 +13,7 @@ function BlobSVG(props) {
     transform: `rotate(${rotate}deg)`,
     zIndex: "-10",
     transitonProperty: 'transform',
-    transitionDuration: '2s',
+    transitionDuration: '4s',
     transitionTimingFunction: `ease`,
   }
   

@@ -21,7 +21,7 @@ class H2Blob extends Component {
 
   rotateBlob() {
     this.intervalID = setInterval(() => {
-      this.setState({ angle: (this.state.angle + getRandonNumber(0, 180)) })
+      this.setState({ angle: (this.state.angle + getRandonNumber(0, 90)) })
     }, getRandonNumber(3000, 6000))
   }
 
