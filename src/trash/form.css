@@ -12,14 +12,14 @@
 
 .email-form input :focus {
   outline: none;
-  border: 1px solid red
+  border: 1px solid red;
 }
 
 .email-form ::placeholder {
   color: var(--grey-70);
 }
 
-.email-form input[name="name"] {
+.email-form input[name='name'] {
   width: 30%;
   font-family: 'Quicksand';
   font-size: var(--s-4);
@@ -27,14 +27,14 @@
   border-radius: var(--s-16) 0 0 var(--s-16);
 }
 
-.email-form input[name="email"] {
+.email-form input[name='email'] {
   width: 48%;
   font-family: 'Quicksand';
   font-size: var(--s-4);
   color: var(--gray-70);
 }
 
-.email-form input[type="submit"] {
+.email-form input[type='submit'] {
   color: white;
   background: var(--purple-50);
   font-family: 'Quicksand';
@@ -46,7 +46,6 @@
   text-align: left;
 }
 
-.email-form input[type="submit"]:hover {
+.email-form input[type='submit']:hover {
   background: var(--purple-60);
 }
-

@@ -1,5 +1,9 @@
 .footer {
-  padding: var(--s-20) 0;
+  overflow-x: hidden;
+}
+
+.footer .banner {
+  padding: var(--s-32) 0;
 }
 
 .footer .footer-content {

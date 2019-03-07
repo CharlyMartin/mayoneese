@@ -13,17 +13,17 @@ import data from '../data/home'
 
 function Footer() {
   return (
-    <Banner colour="grey" shade="10" position="top">
     <footer className="footer">
-      <div className="container-sm">
-        <div className="footer-content">
-          <h3>{data.footer.title}</h3>
-          <p>{data.footer.description}</p>
+      <Banner colour="grey" shade="10" position="top">
+        <div className="container-sm">
+          <div className="footer-content">
+            <h3>{data.footer.title}</h3>
+            <p>{data.footer.description}</p>
+          </div>
+          <MailchimpForm />
         </div>
-        <MailchimpForm />
-      </div>
+      </Banner>
     </footer>
-    </Banner>
   )
 }
 
