@@ -4,6 +4,11 @@
   left: 0;
   right: 0;
   z-index: 20;
+  overflow: hidden;
+}
+
+.navbar a {
+  border-bottom: none;
 }
 
 .navbar-content {
@@ -13,5 +18,5 @@
 #logo {
   width: var(--s-32);
   fill: red;
-  margin-top: var(--s-6);
+  padding: var(--s-6) 0;
 }

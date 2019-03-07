@@ -28,7 +28,7 @@ function Header(props) {
               width="270px"
               colour="yellow"
               shade="00"
-              top="-200px"
+              top="-220px"
               left="-80px"
               rotate="65"
             />

@@ -57,11 +57,12 @@ a, .link {
   font-family: 'Overpass';
   letter-spacing: 0.6px;
   line-height: 1.8;
-  text-decoration: underline var(--purple-10);
+  border-bottom: 0.5px solid var(--purple-50);
+  /* text-decoration: underline var(--purple-10); */
 }
 
 a:hover, .link:hover {
-  text-decoration: underline var(--purple-20);
+  border-bottom: 1px solid var(--purple-50);
 }
 
 .text-small {
