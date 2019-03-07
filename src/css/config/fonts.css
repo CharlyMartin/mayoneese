@@ -115,11 +115,7 @@ input {
   p, .text {
     font-size: var(--s-4);
     font-weight: 400;
-    font-family: 'Overpass';
-    letter-spacing: 0.6px;
     color: var(--grey-80);
-    padding-bottom: var(--s-6);
-    line-height: 1.8;
   }
 }
 

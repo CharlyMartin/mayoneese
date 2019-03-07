@@ -20,7 +20,6 @@ function Header(props) {
     <header className="navbar">
       <div className="container"> 
         <Link to={`/${pages.home}`}>
-          {/* <Img fixed={props.logo.childImageSharp.fixed} /> */}
           <span className="navbar-content">
             <img src={logo} alt="Mayoneese Logo" id="logo" />
             

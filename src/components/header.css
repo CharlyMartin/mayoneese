@@ -17,6 +17,25 @@
 
 #logo {
   width: var(--s-32);
-  fill: red;
   padding: var(--s-6) 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+  /* Up to that screen width, the following rules apply: */
+}
+
+@media screen and (max-width: 992px) {
+  /* Up to that screen width, the following rules apply: */
+}
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+  #logo {
+    padding: var(--s-4) 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Up to that screen width, the following rules apply: */
 }
