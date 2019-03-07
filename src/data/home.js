@@ -20,12 +20,12 @@ export default {
     text: 'At Mayoneese, we believe that listening to great music everyday can make your life way better. We dig out the web and bring our best findings to you. Is this really a job?'
   },
   how: {
-    title: 'We want to make you feel.',
+    title: 'We want to make you feel',
     text: 'We’re looking for one thing: music that makes you want to smile, dance, move, jump or bang your head wherever you deem appropriate. You remember that feeling of listening to a great track for the first time? Image that every week.'
   },
   what: {
     title: 'House, Disco & Electro',
-    text: 'We send you the best of disco, house and electronic music every week: hidden gems that deserve more attention and the old forgotten tracks that still work. La creme de la creme'
+    text: 'We send you the best of disco, house and electronic music every week: hidden gems that deserve more attention and the old forgotten tracks that still work. La creme de la creme.'
   },
   footer: {
     title: "Join mayoneese now!",
