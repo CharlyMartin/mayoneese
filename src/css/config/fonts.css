@@ -29,15 +29,15 @@ h2 {
   font-size: var(--s-10);
   letter-spacing: -1px;
   font-family: 'Quicksand';
-  padding-bottom: var(--s-4);
+  padding-bottom: var(--s-6);
 }
 
 h3 {
   font-weight: 400;
-  font-size: var(--s-6);
+  font-size: var(--s-8);
   letter-spacing: -1px;
   font-family: 'Quicksand';
-  padding-bottom: var(--s-6);
+  padding-bottom: var(--s-4);
 }
 
 /* Body */
@@ -96,6 +96,30 @@ input {
     font-size: var(--s-12);
     letter-spacing: -3px;
     line-height: 0.8;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: var(--s-8);
+    letter-spacing: -1px;
+    padding-bottom: var(--s-4);
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: var(--s-6);
+    letter-spacing: -0.5px;
+    padding-bottom: var(--s-4);
+  }
+
+  p, .text {
+    font-size: var(--s-4);
+    font-weight: 400;
+    font-family: 'Overpass';
+    letter-spacing: 0.6px;
+    color: var(--grey-80);
+    padding-bottom: var(--s-6);
+    line-height: 1.8;
   }
 }
 

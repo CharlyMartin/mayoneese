@@ -17,7 +17,7 @@ function Footer() {
     <footer className="footer">
       <div className="container-sm">
         <div className="footer-content">
-          <h2>{data.footer.title}</h2>
+          <h3>{data.footer.title}</h3>
           <p>{data.footer.description}</p>
         </div>
         <MailchimpForm />

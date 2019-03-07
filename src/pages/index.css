@@ -32,7 +32,6 @@ section {
   width: 65%;
 }
 
-
 #hero form {
   padding-top: var(--s-20); 
 }
@@ -41,6 +40,8 @@ section {
   padding-top: var(--s-4);
   padding-left: var(--s-8);
 }
+
+
 
 
 
@@ -54,7 +55,6 @@ section {
 }
 
 .features {
-  overflow: hidden;
   padding: var(--s-32) 0;
 }
 
@@ -85,6 +85,10 @@ section {
   #hero .hero-content {
     width: 80%;
   }
+
+  .features .text-left, .features .text-right {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -92,6 +96,20 @@ section {
   #hero .hero-content {
     width: 100%;
   }
+
+  .features .text-left, .features .text-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .features {
+    padding: var(--s-24) 0;
+  }
+  
+  section {
+    padding-bottom: var(--s-40);
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -99,10 +117,6 @@ section {
   #hero {
     padding-top: var(--s-24);
   }
-  
-  /* #hero .hero-content {
-    width: 100%;
-  } */
 
   #hero h1 span {
     padding-top: var(--s-4);
@@ -117,6 +131,10 @@ section {
   #hero form {
     padding-top: var(--s-12); 
   }
+
+  /* section {
+    padding-bottom: var(--s-32);
+  } */
 }
 
 @media screen and (max-width: 576px) {

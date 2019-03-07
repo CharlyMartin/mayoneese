@@ -42,8 +42,6 @@ class H2Blob extends Component {
 
     const style = {
       color: `var(--${colour}-50)`,
-      position: `relative`,
-      paddingBottom: `var(--s-10)`,
     }
 
     return (

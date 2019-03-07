@@ -5,3 +5,10 @@
   transition-duration: 4s;
   transition-timing-function: ease;
 }
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+  .blob.dark {
+    display: none;
+  }
+}

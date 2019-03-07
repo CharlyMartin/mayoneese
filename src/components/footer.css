@@ -7,8 +7,7 @@
   text-align: center;
 }
 
-.footer h2 {
-  font-size: var(--s-8);
+.footer h3 {
   letter-spacing: -0.5px;
   padding-bottom: var(--s-2);
   color: var(--purple-60);
