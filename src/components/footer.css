@@ -11,6 +11,7 @@
   letter-spacing: -0.5px;
   padding-bottom: var(--s-2);
   color: var(--purple-60);
+  font-weight: 500;
 }
 
 .footer p {
