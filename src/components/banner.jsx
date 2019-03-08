@@ -7,6 +7,9 @@ import './banner.css';
 class Banner extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      shadows: '0 4px 0 red'
+    }
   }
 
   shouldComponentUpdate() {
@@ -14,23 +17,38 @@ class Banner extends React.Component {
     return true;
   }
 
+  renderStyle(colour, shade) {
+    // find a way to call renderStyle recursively
+    // until the shadows object is done enumerating
+    const shadows = [
+      ['yellow', 40],
+      ['yellow', 50],
+      ['orange', 60]
+    ]
+    
+    return {
+      background: `var(--${colour}-${shade})`,
+      boxShadow: this.state.shadows
+    }
+  }
+
   addBoxShadow() {
+    const shadow = '0 4px 0 var(--yellow-30)'
+    const newShadow = this.setState.shadows += shadow;
+    this.setState({shadows: newShadow});
     // console.log(this);
   }
 
-  componentDidUpdate() {
-    console.log(this, 'banner updating')
-    this.addBoxShadow();
-  }
+  // componentDidUpdate() {
+  //   this.addBoxShadow();
+  //   // Not possible to call setState here, it creates an infinite loops of renders.
+  // }
 
   render() {
     const {colour, shade, position, children} = this.props;
-    const style = {
-      background: `var(--${colour}-${shade})`,
-    }
 
     return (
-      <div className={`banner ${position}`} style={style}>
+      <div className={`banner ${position}`} style={this.renderStyle(colour, shade)}>
         {children}
         <div className="banner-placeholder" />
       </div>
