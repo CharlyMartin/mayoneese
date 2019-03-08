@@ -2,7 +2,7 @@ export default {
   landing: {
     value1: 'Music that makes you',
     value2: 'come alive',
-    description: "Get one awesome music track in your inbox weekly. For free. You're welcome.",
+    description: "Get an awesome music track in your inbox weekly. For free. You're welcome.",
   },
   form: {
     description: 'Sign up! The music sounds better with you 🔥'
@@ -21,7 +21,7 @@ export default {
   },
   how: {
     title: 'We want to make you feel',
-    text: 'We’re looking for one thing: music that makes you want to smile, dance, move, jump or bang your head wherever you deem appropriate. You remember that feeling of listening to a great track for the first time? Image that every week.'
+    text: 'We’re looking for one thing: music that makes you want to smile, dance, move, jump or bang your head wherever you deem appropriate. You remember that feeling of listening to a great track for the first time? Imagine that every week.'
   },
   what: {
     title: 'House, Disco & Electro',

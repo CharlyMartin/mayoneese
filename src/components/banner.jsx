@@ -9,6 +9,10 @@ function Banner({colour, shade, position, children}) {
   const style = {
     background: `var(--${colour}-${shade})`,
   }
+
+  const triggerBoxShadow = () => {
+    
+  }
   
   return (
     <div className={`banner ${position}`} style={style}>

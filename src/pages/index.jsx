@@ -27,7 +27,7 @@ function HomePage() {
           <section id="hero">
             <div className="container">
               <div className="hero-content">
-                <h1>
+                <h1 className="title">
                   {data.landing.value1}
                   <span className="title">{data.landing.value2}</span>
                 </h1>

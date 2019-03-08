@@ -95,7 +95,7 @@ input {
   h1, .title {
     font-size: var(--s-12);
     letter-spacing: -3px;
-    line-height: 0.8;
+    line-height: 1;
   }
 
   h2 {

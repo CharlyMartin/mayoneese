@@ -11,11 +11,11 @@ section {
   padding-bottom: var(--s-58);
 }
 
-#hero h1 {
+#hero .title {
   color: white;
 }
 
-#hero h1 span {
+#hero .title span {
   display: block;
   color: var(--purple-50);
   padding-top: var(--s-8);
@@ -122,8 +122,8 @@ section {
     padding-top: var(--s-24);
   }
 
-  #hero h1 span {
-    padding-top: var(--s-4);
+  #hero .title span {
+    padding-top: var(--s-1);
   }
 
   #hero h3 {
