@@ -17,84 +17,101 @@ import './index.css';
 // Data
 import data from '../data/home';
 
-function HomePage() {
-  return (
-    <Layout>
-      <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      
-      <div id="home-page">
-        <Banner colour="yellow" shade="30" position="bottom">
-          <section id="hero">
-            <div className="container">
-              <div className="hero-content">
-                <h1 className="title">
-                  {data.landing.value1}
-                  <span className="title">{data.landing.value2}</span>
-                </h1>
-                <h3>{data.landing.description}</h3>
-              
-                <MailchimpForm />
-                <p className="description text-small">{data.form.description}</p>
-              </div>
-            </div>
-          </section>
-        </Banner>
+class HomePage extends React.Component {
+  constructor(props) {
+    super(props)
 
+    this.state = {
+      bannerShadow: false
+    }
+
+    this.handleHover = this.handleHover.bind(this);
+    // this.deferred = this.deferred.bind(this);
+  }
+
+  handleHover(event) {
+    this.setState({bannerShadow: true});
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         
-        <div className="features">
-
-          <section id="problem">
-            <div className="container-sm">
-              <div className="text-left">
-
-                <H2Blob colour="purple" position="right">{data.problem.title}</H2Blob>
-
-                <span className="first-patagraph">
-                  <p>{data.problem.text1}</p>
-                  <A href={data.problem.link}>
-                    {data.problem.linkText}
-                  </A>
-                </span>
-
-                <p>{data.problem.text2}</p>
-                <p className="solution">{data.problem.solution}</p>
-
+        <div id="home-page">
+          <Banner colour="yellow" shade="30" position="bottom" shadow={this.state.bannerShadow}>
+            <section id="hero">
+              <div className="container">
+                <div className="hero-content">
+                  <h1 className="title">
+                    {data.landing.value1}
+                    <span className="title">{data.landing.value2}</span>
+                  </h1>
+                  <h3>{data.landing.description}</h3>
+                
+                  <MailchimpForm handleHover={this.handleHover} />
+                  <p className="description text-small">{data.form.description}</p>
+                </div>
               </div>
-            </div>
-          </section>
-
-          <section id="why">
-            <div className="container-sm">
-              <div className="text-right">
-                <H2Blob colour="red" position="left">{data.why.title}</H2Blob>
-                <p>{data.why.text}</p>
+            </section>
+          </Banner>
+  
+          
+          <div className="features">
+  
+            <section id="problem">
+              <div className="container-sm">
+                <div className="text-left">
+  
+                  <H2Blob colour="purple" position="right">{data.problem.title}</H2Blob>
+  
+                  <span className="first-patagraph">
+                    <p>{data.problem.text1}</p>
+                    <A href={data.problem.link}>
+                      {data.problem.linkText}
+                    </A>
+                  </span>
+  
+                  <p>{data.problem.text2}</p>
+                  <p className="solution">{data.problem.solution}</p>
+  
+                </div>
               </div>
-            </div>
-          </section>
-
-          <section id="how">
-            <div className="container-sm">
-              <div className="text-left">
-                <H2Blob colour="orange" position="right">{data.how.title}</H2Blob>
-                <p>{data.how.text}</p>
+            </section>
+  
+            <section id="why">
+              <div className="container-sm">
+                <div className="text-right">
+                  <H2Blob colour="red" position="left">{data.why.title}</H2Blob>
+                  <p>{data.why.text}</p>
+                </div>
               </div>
-            </div>
-          </section>
-
-          <section id="what">
-            <div className="container-sm">
-              <div className="text-right">
-                <H2Blob colour="yellow" position="left">{data.what.title}</H2Blob>
-                <p>{data.what.text}</p>
+            </section>
+  
+            <section id="how">
+              <div className="container-sm">
+                <div className="text-left">
+                  <H2Blob colour="orange" position="right">{data.how.title}</H2Blob>
+                  <p>{data.how.text}</p>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+  
+            <section id="what">
+              <div className="container-sm">
+                <div className="text-right">
+                  <H2Blob colour="yellow" position="left">{data.what.title}</H2Blob>
+                  <p>{data.what.text}</p>
+                </div>
+              </div>
+            </section>
+            
+          </div>
           
         </div>
-        
-      </div>
-    </Layout>
-  )
+      </Layout>
+    )
+  }
 }
 
 export default HomePage;

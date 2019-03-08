@@ -4,22 +4,38 @@ import React from 'react';
 // Import CSS
 import './banner.css';
 
-function Banner({colour, shade, position, children}) {
-  
-  const style = {
-    background: `var(--${colour}-${shade})`,
+class Banner extends React.Component {
+  constructor(props) {
+    super(props)
   }
 
-  const triggerBoxShadow = () => {
-    
+  shouldComponentUpdate() {
+    if (this.props.shadow === undefined) return false;
+    return true;
   }
-  
-  return (
-    <div className={`banner ${position}`} style={style}>
-      {children}
-      <div className="banner-placeholder" />
-    </div>
-  );
-};
+
+  addBoxShadow() {
+    // console.log(this);
+  }
+
+  componentDidUpdate() {
+    console.log(this, 'banner updating')
+    this.addBoxShadow();
+  }
+
+  render() {
+    const {colour, shade, position, children} = this.props;
+    const style = {
+      background: `var(--${colour}-${shade})`,
+    }
+
+    return (
+      <div className={`banner ${position}`} style={style}>
+        {children}
+        <div className="banner-placeholder" />
+      </div>
+    );
+  }
+}
 
 export default Banner;
