@@ -2,7 +2,7 @@ export default {
   landing: {
     value1: 'Music that makes you',
     value2: 'come alive',
-    description: "Get an awesome music track in your inbox weekly. For free. You're welcome.",
+    description: "Get an awesome music track in your inbox every week. For free. You're welcome.",
   },
   form: {
     description: 'Sign up! The music sounds better with you 🔥'
