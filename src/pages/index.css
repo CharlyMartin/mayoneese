@@ -59,7 +59,7 @@ section {
 }
 
 .features {
-  padding: var(--s-32) 0;
+  padding: var(--s-40) 0;
 }
 
 .features .text-left {
@@ -107,7 +107,7 @@ section {
   }
 
   .features {
-    padding: var(--s-24) 0;
+    padding: var(--s-32) 0;
   }
   
   section {
@@ -119,7 +119,7 @@ section {
 @media screen and (max-width: 768px) {
   /* Up to that screen width, the following rules apply: */
   #hero {
-    padding-top: var(--s-24);
+    padding-top: var(--s-20);
   }
 
   #hero .title span {
@@ -128,20 +128,24 @@ section {
 
   #hero h3 {
     font-size: var(--s-5);
-    padding-top: var(--s-12);
+    padding-top: var(--s-16);
     letter-spacing: 0.3px;
   }
 
   #hero form {
     padding-top: var(--s-12); 
   }
-
-  /* section {
-    padding-bottom: var(--s-32);
-  } */
 }
 
 @media screen and (max-width: 576px) {
   /* Up to that screen width, the following rules apply: */
+  #hero .description {
+    padding-top: var(--s-4);
+    padding-left: 0;
+    text-align: center;
+  }
 
+  #problem a {
+    display: none;
+  }
 }

@@ -1,6 +1,6 @@
 .email-form input {
   height: var(--s-16);
-  margin-right: var(--s-1);
+  margin-right: 0.33%;
   padding: 0 var(--s-8);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .email-form .email {
-  width: 45%;
+  width: 44%;
   font-family: 'Quicksand';
   font-size: var(--s-4);
   color: var(--gray-70);
@@ -41,7 +41,7 @@
   font-family: 'Quicksand';
   font-weight: 500;
   font-size: var(--s-5);
-  width: 23%;
+  width: 25%;
   border-radius: 0 var(--s-16) var(--s-16) 0;
   cursor: pointer;
   text-align: left;
