@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import facebookImage from '../images/facebook.png';
+import favicon from '../images/favicon.png';
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
@@ -16,7 +17,8 @@ function SEO({ description, lang, meta, keywords, title }) {
           <Helmet htmlAttributes={{lang}}
                   title={title}
                   titleTemplate={`%s | ${data.site.siteMetadata.title}`}>
-
+            
+            <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
             <meta name="description"          content={metaDescription} />
             <meta property="og:url"           content={data.site.siteMetadata.siteUrl} />
             <meta property="og:type"          content="website" />

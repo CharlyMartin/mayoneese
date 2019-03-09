@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mayoneese`,
-    description: `Music that makes you come alive`,
+    description: `Get an awesome music track in your inbox every week. Join today 🔥`,
     author: `Charly Martin`,
     siteUrl: `https://mayoneese.club/`,
   },
