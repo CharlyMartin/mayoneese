@@ -23,14 +23,14 @@ class HomePage extends React.Component {
 
     this.state = {
       bannerShadows: [],
-      shadowRendered: false
+      shadowRendered: false,
     }
 
-    this.handleButtonHover = this.handleButtonHover.bind(this);
+    this.handleButtonHover = this.handleButtonHover.bind(this)
   }
 
   buildShadow(height, colour, shade) {
-    return `0 ${height}px 0 var(--${colour}-${shade})`;
+    return `0 ${height}px 0 var(--${colour}-${shade})`
   }
 
   triggerShadows() {
@@ -50,9 +50,9 @@ class HomePage extends React.Component {
       const [colour, shade] = shadows[i]
 
       setTimeout(() => {
-        console.log(colour, shade)
+        // console.log(colour, shade)
         const shadows = [...this.state.bannerShadows]
-        shadows.push(`${this.buildShadow(i * 25, colour, shade)}`)
+        shadows.push(this.buildShadow(i * 25, colour, shade))
 
         this.setState({
           bannerShadows: shadows,
@@ -64,9 +64,9 @@ class HomePage extends React.Component {
   handleButtonHover(event) {
     // console.log(event)
     if (!this.state.shadowRendered) {
-      this.triggerShadows();
+      this.triggerShadows()
     }
-    this.setState({shadowRendered: true});
+    this.setState({ shadowRendered: true })
   }
 
   render() {
