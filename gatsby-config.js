@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Mayoneese`,
     description: `Get an awesome music track in your inbox every week. Join today 🔥`,
+    facebookTitle: 'Get an awesome music track in your inbox every week 🔥',
+    facebookDescription: 'Join Mayoneese today!',
     author: `Charly Martin`,
     siteUrl: `https://mayoneese.club/`,
   },

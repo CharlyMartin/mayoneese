@@ -24,8 +24,8 @@ function SEO({ description, lang, meta, keywords, title }) {
             <meta property="og:type"          content="website" />
             <meta property="og:locale"        content={lang} />
             <meta property="og:site_name"     content={data.site.siteMetadata.title} />
-            <meta property="og:title"         content={data.site.siteMetadata.title} />
-            <meta property="og:description"   content={metaDescription} />
+            <meta property="og:title"         content={data.site.siteMetadata.facebookTitle} />
+            <meta property="og:description"   content={data.site.siteMetadata.facebookDescription} />
             <meta property="og:image"         content={facebookImage} />
             <meta property="og:image:width"   content="1200" />
             <meta property="og:image:height"  content="630" />
@@ -58,6 +58,8 @@ const query = graphql`
       siteMetadata {
         title
         description
+        facebookTitle
+        facebookDescription
         author
         siteUrl
       }
