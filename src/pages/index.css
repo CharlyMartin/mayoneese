@@ -106,9 +106,9 @@ section {
     margin: 0;
   }
 
-  .features {
+  /* .features {
     padding: var(--s-32) 0;
-  }
+  } */
   
   section {
     padding-bottom: var(--s-40);
