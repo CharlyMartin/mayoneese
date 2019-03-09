@@ -116,7 +116,7 @@ class MailchimpForm extends React.Component {
           <input
             type="submit"
             name="subscribe"
-            onMouseEnter={this.props.handleHover}
+            onMouseEnter={this.props.hoverCallback}
             className="button input"
             value={button}
             id="mc-embedded-subscribe"

@@ -22,15 +22,34 @@ class HomePage extends React.Component {
     super(props)
 
     this.state = {
-      bannerShadow: false
+      bannerShadow: ''
     }
 
-    this.handleHover = this.handleHover.bind(this);
-    // this.deferred = this.deferred.bind(this);
+    this.handleButtonHover = this.handleButtonHover.bind(this);
   }
 
-  handleHover(event) {
-    this.setState({bannerShadow: true});
+  buildCSSShadow(height, colour, shade) {
+    return `0 var(--s-${height}) 0 var(--${colour}-${shade})`
+  }
+
+  triggerShadows() {
+    const shadows = [
+      ['purple', 40],
+      // ['yellow', 50],
+      // ['orange', 40],
+      // ['orange', 50]
+    ];
+
+    setTimeout(() => {
+      this.setState({bannerShadow: this.state.bannerShadow + '0 10px 0 red' });
+    }, 1000);
+
+    
+  }
+
+  handleButtonHover(event) {
+    console.log(event);
+    this.triggerShadows();
   }
 
   render() {
@@ -49,7 +68,7 @@ class HomePage extends React.Component {
                   </h1>
                   <h3>{data.landing.description}</h3>
                 
-                  <MailchimpForm handleHover={this.handleHover} />
+                  <MailchimpForm hoverCallback={this.handleButtonHover} />
                   <p className="description text-small">{data.form.description}</p>
                 </div>
               </div>

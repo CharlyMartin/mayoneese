@@ -7,37 +7,50 @@ import './banner.css';
 class Banner extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      shadows: '',
-      shouldUpdate: true,
-    }
+    // this.state = {
+    //   shadows: '',
+    //   shouldUpdate: true,
+    // }
   }
 
+  // buildCSS(colour, shade) {
+  //   return `var(--${colour}-${shade})`
+  // }
 
+  // renderStyle(colour, shade) {
+  //   // find a way to call renderStyle recursively
+  //   // until the shadows object is done enumerating
+  //   return {
+  //     background: this.buildCSS(colour, shade),
+  //     boxShadow: this.state.shadows
+  //   }
+  // }
 
-  buildCSS(colour, shade) {
-    return `var(--${colour}-${shade})`
+  triggerRainbow() {
+    // console.log(this.intervalID);
+    // clearInterval(this.intervalID);
+
+    // const shadows = [
+    //   ['yellow', 40],
+    //   ['yellow', 50],
+    //   ['orange', 40],
+    //   // ['orange', 50]
+    // ];
+    // for (let i = 0; i < shadows.length; i += 1) {
+    //   const [colour, shade] = shadows[i];
+    //   setTimeout(() => {
+    //     this.setState({
+    //       shadows: this.state.shadows + `0 2px 0 ${this.buildCSS(colour, shade)},`
+    //     })
+    //   }, i * 2000);
+    // }
   }
 
-  renderStyle(colour, shade) {
-    // find a way to call renderStyle recursively
-    // until the shadows object is done enumerating
-    return {
-      background: this.buildCSS(colour, shade),
-      boxShadow: this.state.shadows
-    }
-  }
-
-  addBoxShadow() {
-    const shadow = '0 4px 0 var(--yellow-30)'
-    const newShadow = this.setState.shadows += shadow;
-    this.setState({shadows: newShadow});
-    // console.log(this);
-  }
-
-  // componentDidUpdate() {
-  //   this.addBoxShadow();
-  //   // Not possible to call setState here, it creates an infinite loops of renders.
+  // addBoxShadow() {
+  //   const shadow = '0 4px 0 var(--yellow-30)'
+  //   const newShadow = this.setState.shadows += shadow;
+  //   this.setState({shadows: newShadow});
+  //   // console.log(this);
   // }
 
   shouldComponentUpdate() {
@@ -46,28 +59,21 @@ class Banner extends React.Component {
   }
 
   componentDidUpdate() {
-    clearInterval(this.intervalID);
-    const shadows = [
-      ['yellow', 40],
-      ['yellow', 50],
-      ['orange', 40]
-    ];
-    
-    console.log('component update');
-    this.intervalID = setInterval(() => {
-      this.setState({shadows: '2px 2px 0 red'})
-    }, 1000);
-
-    console.log(shadows);
+    // Not possible to call setState here, it creates an infinite loops of renders.
+    console.log('updating');
   }
 
   render() {
+    console.log('rendering');
     const {colour, shade, position, children} = this.props;
+    const style = {
+      background: `var(--${colour}-${shade})`,
+      boxShadow: this.props.shadow
+    }
 
     return (
-      <div className={`banner ${position}`} style={this.renderStyle(colour, shade)}>
+      <div className={`banner ${position}`} style={style}>
         {children}
-        <div className="banner-placeholder" />
       </div>
     );
   }
