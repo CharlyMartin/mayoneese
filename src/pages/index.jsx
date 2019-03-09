@@ -72,7 +72,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="Home" keywords={['Mayoneese', 'Music', 'House', 'Disco']} />
 
         <div id="home-page">
           <Banner

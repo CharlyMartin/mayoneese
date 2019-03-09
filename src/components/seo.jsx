@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import facebookImage from '../images/facebook.png';
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
@@ -23,9 +24,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             <meta property="og:site_name"     content={data.site.siteMetadata.title} />
             <meta property="og:title"         content={data.site.siteMetadata.title} />
             <meta property="og:description"   content={metaDescription} />
-            <meta property="og:image"         content={image} />
+            <meta property="og:image"         content={facebookImage} />
             <meta property="og:image:width"   content="1200" />
-            <meta property="og:image:height"  content="800" />
+            <meta property="og:image:height"  content="630" />
           </Helmet>
         )
       }}
