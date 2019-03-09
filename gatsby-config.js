@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter`,
-    description: `The starter file from Charly Martin`,
+    title: `Mayoneese`,
+    description: `Music that makes you come alive`,
     author: `Charly Martin`,
-    siteUrl: `https://mayoneese.club/`
+    siteUrl: `https://mayoneese.club/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
