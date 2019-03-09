@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.navbar a {
+.navbar a, .navbar a:hover {
   border-bottom: none;
 }
 

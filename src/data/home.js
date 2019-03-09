@@ -5,7 +5,7 @@ export default {
     description: "Get an awesome music track in your inbox every week. For free. You're welcome.",
   },
   form: {
-    description: 'Sign up! The music sounds better with you 🔥'
+    description: 'Sign up! The music sounds better with you.'
   },
   problem: {
     title: 'Mainstream music is… bleh',
@@ -29,6 +29,6 @@ export default {
   },
   footer: {
     title: "Join mayoneese now!",
-    description: "And be that cool person who plays great music at parties 🔥"
+    description: "And be that cool person who plays great music at parties."
   }
 }

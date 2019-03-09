@@ -8,26 +8,22 @@ class Banner extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      shadows: '0 4px 0 red'
+      shadows: '',
+      shouldUpdate: true,
     }
   }
 
-  shouldComponentUpdate() {
-    if (this.props.shadow === undefined) return false;
-    return true;
+
+
+  buildCSS(colour, shade) {
+    return `var(--${colour}-${shade})`
   }
 
   renderStyle(colour, shade) {
     // find a way to call renderStyle recursively
     // until the shadows object is done enumerating
-    const shadows = [
-      ['yellow', 40],
-      ['yellow', 50],
-      ['orange', 60]
-    ]
-    
     return {
-      background: `var(--${colour}-${shade})`,
+      background: this.buildCSS(colour, shade),
       boxShadow: this.state.shadows
     }
   }
@@ -43,6 +39,27 @@ class Banner extends React.Component {
   //   this.addBoxShadow();
   //   // Not possible to call setState here, it creates an infinite loops of renders.
   // }
+
+  shouldComponentUpdate() {
+    if (this.props.shadow === undefined) return false;
+    return true;
+  }
+
+  componentDidUpdate() {
+    clearInterval(this.intervalID);
+    const shadows = [
+      ['yellow', 40],
+      ['yellow', 50],
+      ['orange', 40]
+    ];
+    
+    console.log('component update');
+    this.intervalID = setInterval(() => {
+      this.setState({shadows: '2px 2px 0 red'})
+    }, 1000);
+
+    console.log(shadows);
+  }
 
   render() {
     const {colour, shade, position, children} = this.props;
