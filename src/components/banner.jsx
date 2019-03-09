@@ -54,7 +54,7 @@ class Banner extends React.Component {
   // }
 
   shouldComponentUpdate() {
-    if (this.props.shadow === undefined) return false;
+    if (this.props.shadows === undefined) return false;
     return true;
   }
 
@@ -65,10 +65,12 @@ class Banner extends React.Component {
 
   render() {
     console.log('rendering');
-    const {colour, shade, position, children} = this.props;
+    const {colour, shade, position, children, shadows} = this.props;
+    // const shadowsString = shadows.join(', ');
+    // console.log(shadowsString);
     const style = {
       background: `var(--${colour}-${shade})`,
-      boxShadow: this.props.shadow
+      boxShadow: shadows,
     }
 
     return (

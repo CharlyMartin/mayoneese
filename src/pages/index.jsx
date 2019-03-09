@@ -22,29 +22,42 @@ class HomePage extends React.Component {
     super(props)
 
     this.state = {
-      bannerShadow: ''
+      bannerShadows: []
     }
 
     this.handleButtonHover = this.handleButtonHover.bind(this);
   }
 
-  buildCSSShadow(height, colour, shade) {
-    return `0 var(--s-${height}) 0 var(--${colour}-${shade})`
+  buildShadow(height, colour, shade) {
+    return `0 ${height}px 0 var(--${colour}-${shade})`
   }
 
   triggerShadows() {
     const shadows = [
+      ['yellow', 30],
+      ['yellow', 40],
+      ['yellow', 50],
+      ['orange', 40],
+      ['orange', 50],
+      ['red', 40],
+      ['red', 50],
       ['purple', 40],
-      // ['yellow', 50],
-      // ['orange', 40],
-      // ['orange', 50]
+      ['purple', 50],
     ];
 
-    setTimeout(() => {
-      this.setState({bannerShadow: this.state.bannerShadow + '0 10px 0 red' });
-    }, 1000);
+    for (let i = 0; i < shadows.length; i++) {
+      const [colour, shade] = shadows[i];
 
-    
+      setTimeout(() => {
+        console.log(colour, shade);
+        const shadows = [...this.state.bannerShadows];
+        shadows.push(`${this.buildShadow(i * 25, colour, shade)}`);
+
+        this.setState({
+          bannerShadows: shadows
+        });
+      }, (i * 60));
+    }
   }
 
   handleButtonHover(event) {
@@ -58,7 +71,7 @@ class HomePage extends React.Component {
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         
         <div id="home-page">
-          <Banner colour="yellow" shade="30" position="bottom" shadow={this.state.bannerShadow}>
+          <Banner colour="yellow" shade="30" position="bottom" shadows={this.state.bannerShadows}>
             <section id="hero">
               <div className="container">
                 <div className="hero-content">
