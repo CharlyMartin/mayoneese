@@ -3,6 +3,7 @@
   position: relative;
   left: -10%;
   padding: var(--s-12);
+  min-height: 90vh;
   /* transition: box-shadow ease-in-out 200ms; */
 }
 

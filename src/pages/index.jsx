@@ -52,7 +52,7 @@ class HomePage extends React.Component {
       setTimeout(() => {
         console.log(colour, shade)
         const shadows = [...this.state.bannerShadows]
-        shadows.push(`${this.buildShadow(i * 20, colour, shade)}`)
+        shadows.push(`${this.buildShadow(i * 25, colour, shade)}`)
 
         this.setState({
           bannerShadows: shadows,
