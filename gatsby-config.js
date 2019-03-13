@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Mayoneese`,
@@ -76,21 +80,30 @@ module.exports = {
       },
     },
     
-    // GOOGLE TAG MANAGER
+    // GOOGLE ANALYTICS
     {
-      // Simply load Google Tag Manager on the initial page/app load.
-      resolve: `gatsby-plugin-google-tagmanager`,
-      // options: {
-      //   id: "YOUR_GOOGLE_TAGMANAGER_ID",
-  
-      //   // Include GTM in development.
-      //   // Defaults to false meaning GTM will only be loaded in production.
-      //   includeInDevelopment: false,
-  
-      //   // Specify optional GTM environment details.
-      //   gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_AUTH_STRING",
-      //   gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIROMENT_PREVIEW_NAME",
-      // },
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // // Setting this parameter is optional
+        // anonymize: true,
+        // // Setting this parameter is also optional
+        // respectDNT: true,
+        // // Avoids sending pageview hits from custom paths
+        // exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // // Enables Google Optimize using your container Id
+        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        // // Enables Google Optimize Experiment ID
+        // experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        // // Set Variation ID. 0 for original 1,2,3....
+        // variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        // // Any additional create only fields (optional)
+        // sampleRate: 5,
+        // siteSpeedSampleRate: 10,
+        // cookieDomain: "example.com",
+      },
     },
     
     // NETLIFY
