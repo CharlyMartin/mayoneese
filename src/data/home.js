@@ -31,7 +31,7 @@ export default {
   what: {
     title: 'La creme de la creme',
     text:
-      'We send you the best of the genres we love: Disco, House, Electro, Pop... The hidden gems that deserve more attention and the forgotten tracks that still work. Only the good stuff.',
+      'We send you the best of the genres we love: Disco, House, Electronic, Pop... The hidden gems that deserve more attention and the forgotten tracks that still work. Only the good stuff.',
   },
   footer: {
     title: 'Join mayoneese now!',
