@@ -14,7 +14,7 @@ import data from '../data/home'
 function Footer() {
   return (
     <footer className="footer">
-      <Banner colour="grey" shade="00" position="top" shadows={[]}>
+      <Banner colour="yellow" shade="10" position="top" shadows={[]}>
         <div className="container-sm">
           <div className="footer-content">
             <h3>{data.footer.title}</h3>

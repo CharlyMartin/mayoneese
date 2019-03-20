@@ -63,9 +63,9 @@ class H2Blob extends Component {
           colour={colour}
           shade="00"
           width={getRandonNumber(720, 780)}
-          top="-100%"
-          left={position === "left" ? "-140%" : ""}
-          right={position === "right" ? "-140%" : ""}
+          top="-50%"
+          left={position === "left" ? "-150%" : ""}
+          right={position === "right" ? "-150%" : ""}
           rotate={getRandonNumber(80, 90)}
         />
 
