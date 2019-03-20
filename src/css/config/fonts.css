@@ -25,11 +25,12 @@ h1, .title {
 }
 
 h2 {
-  font-weight: 500;
-  font-size: var(--s-10);
+  font-weight: 300;
+  font-size: var(--s-16);
   letter-spacing: -1px;
   font-family: 'Quicksand';
   padding-bottom: var(--s-6);
+  color: var(--grey-80)
 }
 
 h3 {
@@ -43,28 +44,31 @@ h3 {
 /* Body */
 p, .text {
   font-size: var(--s-5);
-  font-weight: 300;
+  font-weight: 400;
   font-family: 'Overpass';
   letter-spacing: 0.6px;
-  color: var(--grey-90);
+  color: var(--grey-70);
   padding-bottom: var(--s-6);
   line-height: 1.8;
 }
 
 a, .link {
   font-weight: 600;
-  color: var(--purple-50);
+  /* color: var(--purple-50); */
+  color: white;
   font-size: var(--s-5);
   font-family: 'Overpass';
   letter-spacing: 0.6px;
   line-height: 1.8;
-  border-bottom: 1px solid var(--grey-20);
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--s-1);
+  /* border-bottom: 1px solid var(--grey-20); */
   /* text-decoration: underline var(--purple-10); */
 }
 
-a:hover, .link:hover {
+/* a:hover, .link:hover {
   border-bottom: 1px solid var(--grey-40);
-}
+} */
 
 .text-small {
   font-weight: 600;

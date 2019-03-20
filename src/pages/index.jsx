@@ -109,11 +109,13 @@ class HomePage extends React.Component {
 
                   <span className="first-patagraph">
                     <p>{data.problem.text1}</p>
-                    <A href={data.problem.link}>{data.problem.linkText}</A>
+                    <A href={data.problem.link} colour="purple">
+                      {data.problem.linkText}
+                    </A>
                   </span>
 
                   <p>{data.problem.text2}</p>
-                  <p className="solution">{data.problem.solution}</p>
+                  <p>{data.problem.solution}</p>
                 </div>
               </div>
             </section>

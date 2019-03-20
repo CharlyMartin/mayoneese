@@ -16,22 +16,22 @@ class H2Blob extends Component {
       angle: 0,
     }
 
-    this.rotateBlob = this.rotateBlob.bind(this)
+    // this.rotateBlob = this.rotateBlob.bind(this);
   }
 
-  rotateBlob() {
-    this.intervalID = setInterval(() => {
-      this.setState({ angle: (this.state.angle + getRandonNumber(0, 90)) })
-    }, getRandonNumber(3000, 6000))
-  }
+  // rotateBlob() {
+  //   this.intervalID = setInterval(() => {
+  //     this.setState({ angle: (this.state.angle + getRandonNumber(0, 90)) })
+  //   }, getRandonNumber(3000, 6000))
+  // }
 
-  componentDidMount() {
-    this.setState({
-      angle: getRandonNumber(0, 360),
-    })
+  // componentDidMount() {
+  //   this.setState({
+  //     angle: getRandonNumber(0, 360),
+  //   })
 
-    this.rotateBlob()
-  }
+  //   this.rotateBlob()
+  // }
 
   componentWillUnmount() {
     clearInterval(this.intervalID)
@@ -40,34 +40,47 @@ class H2Blob extends Component {
   render() {
     const { colour, position } = this.props
 
-    const style = {
-      color: `var(--${colour}-50)`,
-    }
+    // const style = {
+    //   color: `var(--${colour}-50)`,
+    // }
 
     return (
-      <div className="h2" style={style}>
+      <div className="h2" style={{color: colour}}>
         <h2>{this.props.children}</h2>
 
         <Blob
+          id="blob-small"
+          colour={colour}
+          shade="20"
+          width={getRandonNumber(120, 140)}
+          top="0"
+          left="-5%"
+          rotate={getRandonNumber(60, 100)}
+        />
+
+        <Blob
+          id="blob-right"
           colour={colour}
           shade="00"
-          width="550px"
-          top="0%"
-          right={position === 'right' ? '-40%' : '50%'}
-          // left={(position === 'left' ? "-100%" : "")}
-          rotate={this.state.angle}
+          width={getRandonNumber(720, 780)}
+          top="-100%"
+          left={position === "left" ? "-140%" : ""}
+          right={position === "right" ? "-140%" : ""}
+          rotate={getRandonNumber(80, 90)}
         />
 
-        <Blob
+        {/* <Blob
+          id="blob-left"
           colour={colour}
-          shade="10"
-          width="300px"
-          top="10%"
-          right={position === 'right' ? '-55%' : '100%'}
-          rotate={this.state.angle}
-        />
+          shade="00"
+          width={getRandonNumber(500, 580)}
+          top="0"
+          left={position === "left" ? "-110%" : ""}
+          right={position === "right" ? "-100%" : ""}
+          rotate={getRandonNumber(270, 280)}
+        /> */}
 
-        <Blob
+        {/* <Blob
           colour={colour}
           shade="30"
           width="120px"
@@ -83,7 +96,7 @@ class H2Blob extends Component {
           top="35%"
           right={position === 'right' ? '135%' : '-20%'}
           rotate={this.state.angle}
-        />
+        /> */}
       </div>
     )
   }
