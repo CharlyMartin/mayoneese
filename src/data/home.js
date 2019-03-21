@@ -19,7 +19,7 @@ export default {
     solution: 'That’s where Mayoneese comes to the rescue 🔥',
   },
   why: {
-    title: 'Good music makes your life better',
+    title: 'Good music, good life',
     text:
       'At Mayoneese, we believe that listening to great music everyday can make your days brighter. So we dig out the web and bring you our best findings. Is this really a job?',
   },

@@ -103,8 +103,8 @@ input {
   }
 
   h2 {
-    font-weight: 500;
-    font-size: var(--s-8);
+    font-weight: 400;
+    font-size: var(--s-10);
     letter-spacing: -1px;
     padding-bottom: var(--s-4);
   }

@@ -49,24 +49,24 @@ class H2Blob extends Component {
         <h2>{this.props.children}</h2>
 
         <Blob
+          id="blob-big"
+          colour={colour}
+          shade="00"
+          width={getRandonNumber(720, 780)}
+          top="-70%"
+          left={position === "left" ? "-160%" : ""}
+          right={position === "right" ? "-160%" : ""}
+          rotate={getRandonNumber(80, 90)}
+        />
+
+        <Blob
           id="blob-small"
           colour={colour}
-          shade="20"
+          shade="10"
           width={getRandonNumber(120, 140)}
           top="0"
           left="-5%"
           rotate={getRandonNumber(60, 100)}
-        />
-
-        <Blob
-          id="blob-right"
-          colour={colour}
-          shade="00"
-          width={getRandonNumber(720, 780)}
-          top="-50%"
-          left={position === "left" ? "-150%" : ""}
-          right={position === "right" ? "-150%" : ""}
-          rotate={getRandonNumber(80, 90)}
         />
 
         {/* <Blob

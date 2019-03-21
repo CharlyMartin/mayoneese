@@ -14,11 +14,15 @@
 .footer h3 {
   letter-spacing: -0.5px;
   padding-bottom: var(--s-2);
-  color: var(--purple-60);
+  color: white;
   font-weight: 500;
 }
 
 .footer p {
-  color: var(--purple-90);
+  color: var(--purple-70);
+  font-size: var(--s-6);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-family: 'Overpass';
 }
 
