@@ -4,15 +4,15 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const SecondPage = () => (
+const Profile = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Profile" />
     <div className="container">
-      <h1>This is page 2</h1>
+      <h1>This is a profile page</h1>
       
       <Link to="/">Go home</Link>
     </div>
   </Layout>
 )
 
-export default SecondPage
+export default Profile
