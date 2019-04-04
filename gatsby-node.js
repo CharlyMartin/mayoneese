@@ -5,3 +5,27 @@
  */
 
 // You can delete this file if you're not using it
+
+
+// {
+//   allAirtable(filter: {table: {eq: "People"}}) {
+//     edges {
+//       node {
+//         data {
+//           Name
+//           Songs {
+//             data {
+//               Track
+//               Recipe
+//               Artist {
+//                 data {
+//                   Name
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

@@ -61,6 +61,8 @@ module.exports = {
       }
     },
 
+
+
     // GOOGLE FONTS
     {
       // Prefetches webfonts during build, instead of loading external stylesheet at page load.
@@ -78,6 +80,40 @@ module.exports = {
           },
         ],
       },
+    },
+
+    {
+      resolve: `gatsby-source-airtable`,
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY, // may instead specify via env, see below
+        tables: [
+          {
+            baseId: process.env.MUSIC_BASE_ID,
+            tableName: `Tracks`,
+            tableView: `Grid view`,
+            tableLinks: [`Artist`, `People`] // optional, for deep linking to records across tables.
+            // queryName: `OPTIONAL_NAME_TO_IDENTIFY_TABLE`, // optional
+            // mapping: { `CASE_SENSITIVE_COLUMN_NAME`: `VALUE_FORMAT` }, // optional, e.g. "text/markdown", "fileNode"
+          },
+          {
+            baseId: process.env.MUSIC_BASE_ID,
+            tableName: `People`,
+            tableView: `Grid view`,
+            tableLinks: [`Songs`] // optional, for deep linking to records across tables.
+            // queryName: `OPTIONAL_NAME_TO_IDENTIFY_TABLE`, // optional
+            // mapping: { `CASE_SENSITIVE_COLUMN_NAME`: `VALUE_FORMAT` }, // optional, e.g. "text/markdown", "fileNode"
+            
+          },
+          {
+            baseId: process.env.MUSIC_BASE_ID,
+            tableName: `Artists`,
+            tableView: `Grid view`,
+            tableLinks: [`Tracks`] // optional, for deep linking to records across tables.
+            // queryName: `OPTIONAL_NAME_TO_IDENTIFY_TABLE`, // optional
+            // mapping: { `CASE_SENSITIVE_COLUMN_NAME`: `VALUE_FORMAT` }, // optional, e.g. "text/markdown", "fileNode"
+          }
+        ]
+      }
     },
     
     // GOOGLE ANALYTICS
