@@ -1,0 +1,16 @@
+.test {
+  height: 300px;
+  width: 300px;
+  background: salmon;
+}
+ .test-name {
+   /* height: 10%; */
+   max-width: 100%
+ }
+
+ /* Make text stay in box */
+ .test-name p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+ }

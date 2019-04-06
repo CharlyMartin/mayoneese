@@ -5,6 +5,7 @@
  */
 const path = require(`path`);
 const pages = require('./src/data/internal-links');
+const slugify = require('slugify');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -40,27 +41,25 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {throw result.errors};
     
     result.data.allAirtable.edges.forEach(obj => {
-      console.log(obj.node.data.Name);
+      const path = `${pages.users}/${slugify(obj.node.data.Name, {lower: true})}`
+      console.log(path)
+      createPage({
+        // Path for this page — required
+        path,
+        component: profileTemplate,
+        context: {
+          data: obj.node.data
+          // Add optional context data to be inserted
+          // as props into the page component..
+          //
+          // The context data can also be used as
+          // arguments to the page GraphQL query.
+          //
+          // The page "path" is always available as a GraphQL
+          // argument.
+        },
+      })
     })
-
-    // Create blog post pages.
-    // result.data.allMarkdownRemark.edges.forEach(edge => {
-    //   createPage({
-    //     // Path for this page — required
-    //     path: `${edge.node.fields.slug}`,
-    //     component: blogPostTemplate,
-    //     context: {
-    //       // Add optional context data to be inserted
-    //       // as props into the page component..
-    //       //
-    //       // The context data can also be used as
-    //       // arguments to the page GraphQL query.
-    //       //
-    //       // The page "path" is always available as a GraphQL
-    //       // argument.
-    //     },
-    //   })
-    // })
   })
 }
 
