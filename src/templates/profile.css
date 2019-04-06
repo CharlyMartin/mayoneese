@@ -1,3 +1,24 @@
+.user {
+  padding-top: var(--s-32);
+  padding-bottom: var(--s-10);
+}
+
+.user .name {
+  font-weight: 300;
+  color: var(--yellow-90);
+}
+
+.user .suggestions {
+  color: var(--grey-40);
+  font-size: var(--s-4);
+  padding-bottom: var(--s-4);
+}
+
+/* .banner-placeholder {
+  padding-top: var(--s-40);
+  padding-bottom: var(--s-10);
+} */
+
 .test {
   height: 300px;
   width: 300px;
@@ -5,7 +26,7 @@
 }
  .test-name {
    /* height: 10%; */
-   max-width: 100%
+   max-width: 100%;
  }
 
  /* Make text stay in box */

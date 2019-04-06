@@ -23,6 +23,15 @@ exports.createPages = ({ graphql, actions }) => {
                 data {
                   Name
                   Recipe
+                  Date
+                  SoundCloud
+                  YouTube
+                  Spotify
+                  Year
+                  Id
+                  Artboard {
+                    url
+                  }
 
                   Artist {
                     data {
@@ -48,15 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
         path,
         component: profileTemplate,
         context: {
-          data: obj.node.data
-          // Add optional context data to be inserted
-          // as props into the page component..
-          //
-          // The context data can also be used as
-          // arguments to the page GraphQL query.
-          //
-          // The page "path" is always available as a GraphQL
-          // argument.
+          user: obj.node.data,
         },
       })
     })

@@ -78,7 +78,7 @@ class HomePage extends React.Component {
           <Banner
             colour="yellow"
             shade="30"
-            position="bottom"
+            blob="bottom"
             shadows={this.state.bannerShadows}
           >
             <section id="hero">

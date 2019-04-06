@@ -20,16 +20,34 @@ class Banner extends React.Component {
   // }
 
   render() {
-    console.log('rendering')
-    const { colour, shade, position, children, shadows } = this.props
+    const {
+      colour,
+      shade,
+      blob,
+      children,
+      shadows,
+      position,
+      width,
+      left,
+      top,
+      zIndex,
+      rotate
+    } = this.props
 
     const style = {
       background: `var(--${colour}-${shade})`,
-      boxShadow: shadows,
+      boxShadow: shadows || `none`,
+      width: width || `120%`,
+      position: position || `relative`,
+      left: left || `-10%`,
+      top: top || `0%`,
+      zIndex: zIndex || `0`,
+      padding: `var(--s-20)`,
+      transform: `rotate(${rotate}deg)`
     }
 
     return (
-      <div className={`banner ${position}`} style={style}>
+      <div className={`banner blob-${blob}`} style={style}>
         {children}
       </div>
     )
