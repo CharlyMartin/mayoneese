@@ -44,12 +44,18 @@
 }
 
 #suggestions .wallpaper {
-  flex-basis: 30%;
+  width: 45%;
+  flex-grow: 0;
   z-index: -10;
   /* max-height: 250px;
   overflow: hidden;
   text-overflow: clip;
   white-space: nowrap; */
+}
+
+#suggestions .songs {
+  flex-basis: auto;
+  flex-grow: 1;
 }
 
 .message {

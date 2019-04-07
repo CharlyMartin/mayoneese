@@ -1,16 +1,8 @@
-.banner {
-  /* width: 120%; */
-  /* position: relative; */
-  /* padding: var(--s-12); */
-  /* min-height: 70vh; */
-  /* transition: box-shadow ease-in-out 200ms; */
-}
-
-.banner.blob-top {
+.blob-top {
   border-radius: 60% 60% 0% 0% / 50% 25% 0% 0%;
 }
 
-.banner.blob-bottom {
+.blob-bottom {
   border-radius: 0% 0% 60% 60% / 0% 0% 50% 25%;
 }
 

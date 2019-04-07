@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Banner from '../components/banner';
 import A from '../components/a';
+import Track from '../components/track';
 
 // CSS
 import './profile.css'
@@ -94,7 +95,7 @@ function Profile(props) {
             </div>
 
             <div className="songs">
-            
+              <Track/>
             </div>
           </div>
         </div>

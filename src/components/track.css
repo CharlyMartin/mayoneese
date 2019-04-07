@@ -1,0 +1,48 @@
+.track {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  /* background: salmon; */
+  border-radius: var(--s-3);
+  overflow: hidden;
+  box-shadow: 0 0 var(--s-6) rgba(80, 80, 80, 0.1);
+}
+
+.track .artwork {
+  position: absolute;
+  width: 120%;
+  top: 0;
+  left: -18%;
+  height: 55%;
+  z-index: -10;
+}
+
+.track .header {
+  height: 55%;
+  width: 100%;
+}
+
+.track .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.track #date {
+  color: var(--grey-00);
+  font-weight: 300;
+}
+
+.track #rank {
+  font-size: var(--s-8);
+  color: var(--grey-40);
+  font-weight: 100;
+}
+
+.track-container {
+  padding: var(--s-6) var(--s-8);
+}
+
+.track .body h2 {
+  font-weight: 400;
+}
