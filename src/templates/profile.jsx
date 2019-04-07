@@ -17,7 +17,7 @@ import data from '../data/user';
 
 function Profile(props) {
   const { user } = props.pageContext;
-  console.log(user);
+  // console.log(user);
 
   const renderHeader = () => (
     <div className="container">
@@ -37,6 +37,16 @@ function Profile(props) {
     const strings = data.page.background.split(" ");
     return strings.map(s => <h3 className="message" key={s}>{s}</h3>);
   };
+
+  const renderTracks = (tracks) => {
+    return tracks.map(track => {
+      return (
+        <A href={track.data.SoundCloud} key={Math.random()}>
+          <Track obj={track}/>
+        </A>
+      )
+    });
+  }
 
   
   return (
@@ -96,7 +106,8 @@ function Profile(props) {
               </div>
 
               <div className="songs">
-                <Track/>
+                {/* <Track /> */}
+                {renderTracks(user.Songs)}
               </div>
             </div>
           </div>

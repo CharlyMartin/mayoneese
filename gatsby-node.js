@@ -38,6 +38,7 @@ exports.createPages = ({ graphql, actions }) => {
                   Artist {
                     data {
                       Name
+                      Country
                     }
                   }
                 }

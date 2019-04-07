@@ -5,7 +5,7 @@
 }
 
 .user {
-  padding-top: var(--s-16);
+  padding-top: var(--s-10);
   padding-bottom: var(--s-10);
 }
 
@@ -49,10 +49,14 @@
   padding-bottom: var(--s-32);
 }
 
+#suggestions .column-layout {
+  flex-wrap: nowrap;
+  z-index: 0;
+}
+
 #suggestions .wallpaper {
   width: 50%;
   flex-grow: 0;
-  z-index: -10;
   /* max-height: 250px;
   overflow: hidden;
   text-overflow: clip;
@@ -60,8 +64,8 @@
 }
 
 #suggestions .songs {
-  flex-basis: auto;
-  flex-grow: 1;
+  width: 50%;
+  flex-grow: 0;
 }
 
 .message {
@@ -71,6 +75,7 @@
   letter-spacing: -1px;
   font-family: 'Quicksand';
   line-height: var(--s-58);
+  z-index: -10;
 }
 
 .test {
@@ -89,3 +94,38 @@
   text-overflow: ellipsis;
   white-space: nowrap;
  }
+
+@media screen and (max-width: 992px) {
+  /* Up to that screen width, the following rules apply: */
+  #suggestions .wallpaper {
+    width: 30%;
+  }
+  
+  #suggestions .songs {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Up to that screen width, the following rules apply: */
+  #suggestions .wallpaper {
+    width: 0%;
+    display: none;
+  }
+  
+  #suggestions .songs {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  /* Up to that screen width, the following rules apply: */
+  #suggestions .wallpaper {
+    width: 1%;
+  }
+  
+  #suggestions .songs {
+    width: 99%;
+  }
+}
