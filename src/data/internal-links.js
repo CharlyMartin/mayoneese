@@ -1,5 +1,5 @@
 module.exports = {
   home: '',
   about: 'about',
-  users: 'contributors'
+  users: 'people'
 }
