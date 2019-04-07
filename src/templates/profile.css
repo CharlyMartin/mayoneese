@@ -20,6 +20,7 @@
   width: fit-content;
   border-radius: var(--s-8);
   padding: 0 var(--s-4);
+  transition: all 50ms linear;
 }
 
 .user .button p {
@@ -29,10 +30,36 @@
   font-size: var(--s-4);
 }
 
-/* .banner-placeholder {
-  padding-top: var(--s-40);
-  padding-bottom: var(--s-10);
-} */
+.user .button:hover {
+  background: var(--purple-50);
+}
+
+.user .button:hover p {
+  color: white;
+}
+
+#suggestions {
+  padding-top: var(--s-32);
+  padding-bottom: var(--s-32);
+}
+
+#suggestions .wallpaper {
+  flex-basis: 30%;
+  z-index: -10;
+  /* max-height: 250px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap; */
+}
+
+.message {
+  color: var(--grey-00);
+  font-size: var(--s-58);
+  font-weight: 300;
+  letter-spacing: -1px;
+  font-family: 'Quicksand';
+  line-height: var(--s-58);
+}
 
 .test {
   height: 300px;

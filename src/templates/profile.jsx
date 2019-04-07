@@ -32,6 +32,11 @@ function Profile(props) {
     </div>
   );
 
+  const renderWallpaper = () => {
+    const strings = data.page.background.split(" ");
+    return strings.map(s => <h3 className="message">{s}</h3>);
+  };
+
   
   return (
     <Layout>
@@ -52,14 +57,14 @@ function Profile(props) {
         left="-25%"
         position="absolute"
         zIndex="-10"
-        rotate="1"
+        rotate="-1"
       >
         <div className="user">
           {renderHeader()}
         </div>
       </Banner>
 
-      {/* <Banner
+      <Banner
         colour="yellow"
         shade="30"
         blob="bottom"
@@ -68,15 +73,31 @@ function Profile(props) {
         left="-25%"
         position="absolute"
         zIndex="-20"
-        rotate="-1"
+        rotate="-3"
       >
         <div className="user">
           {renderHeader()}
         </div>
-      </Banner> */}
+      </Banner>
 
-      <section id="songs">
-      {data.page.background}
+      {/* <div className="background-messages">
+        <div className="container">
+          {renderWallpaper()}
+        </div>
+      </div> */}
+
+      <section id="suggestions">
+        <div className="container">
+          <div className="column-layout">
+            <div className="wallpaper">
+              {renderWallpaper()}
+            </div>
+
+            <div className="songs">
+            
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* <div className="container">
