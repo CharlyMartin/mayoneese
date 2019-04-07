@@ -52,9 +52,8 @@ p, .text {
   line-height: 1.8;
 }
 
-a, .link {
+.link {
   font-weight: 600;
-  /* color: var(--purple-50); */
   color: white;
   font-size: var(--s-5);
   font-family: 'Overpass';
@@ -62,8 +61,10 @@ a, .link {
   line-height: 1.8;
   padding: var(--s-1) var(--s-2);
   border-radius: var(--s-1);
-  /* border-bottom: 1px solid var(--grey-20); */
-  /* text-decoration: underline var(--purple-10); */
+}
+
+.link.purple {
+  background: var(--purple-50);
 }
 
 /* a:hover, .link:hover {

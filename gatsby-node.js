@@ -19,6 +19,8 @@ exports.createPages = ({ graphql, actions }) => {
             data {
 
               Name
+              Contact
+              
               Songs {
                 data {
                   Name

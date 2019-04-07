@@ -24,11 +24,11 @@ function Header(props) {
             <img src={logo} alt="Mayoneese Logo" id="logo" />
             
             <Blob
-              width="270px"
+              width="260px"
               colour="yellow"
               shade="00"
               top="-220px"
-              left="-80px"
+              left="-90px"
               rotate="65"
             />
           </span>

@@ -1,17 +1,32 @@
 .user {
-  padding-top: var(--s-32);
+  padding-top: var(--s-16);
   padding-bottom: var(--s-10);
 }
 
 .user .name {
-  font-weight: 300;
+  font-weight: 400;
   color: var(--yellow-90);
+  padding-bottom: var(--s-8);
 }
 
 .user .suggestions {
   color: var(--grey-40);
   font-size: var(--s-4);
   padding-bottom: var(--s-4);
+}
+
+.user .button {
+  background: var(--yellow-10);
+  width: fit-content;
+  border-radius: var(--s-8);
+  padding: 0 var(--s-4);
+}
+
+.user .button p {
+  color: var(--yellow-60);
+  padding: 0;
+  font-weight: 600;
+  font-size: var(--s-4);
 }
 
 /* .banner-placeholder {
