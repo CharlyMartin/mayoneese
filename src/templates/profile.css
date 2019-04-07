@@ -1,10 +1,16 @@
+#profile-page {
+  /* width: 100vw; */
+  overflow: hidden;
+  position: relative;
+}
+
 .user {
   padding-top: var(--s-16);
   padding-bottom: var(--s-10);
 }
 
 .user .name {
-  font-weight: 400;
+  font-weight: 300;
   color: var(--yellow-90);
   padding-bottom: var(--s-8);
 }
@@ -44,7 +50,7 @@
 }
 
 #suggestions .wallpaper {
-  width: 45%;
+  width: 50%;
   flex-grow: 0;
   z-index: -10;
   /* max-height: 250px;

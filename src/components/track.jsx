@@ -2,8 +2,14 @@
 import { Link } from 'gatsby'
 import React from 'react'
 
+// Components
+import Blob from '../components/blob'
+
 // CSS
 import './track.css'
+
+// Helpers
+import { getRandonNumber } from '../helpers/functions'
 
 // Component
 function Track(props) {
@@ -29,9 +35,24 @@ function Track(props) {
 
       <div className="body">
         <div className="track-container">
-          <h2>Lady</h2>
+          <h2 className="title">Lady</h2>
+          <p className="artist">{'Modjo'.toUpperCase()}</p>
+          <div className="footer">
+            <p className="details">France - 2018</p>
+            <p className="recipe">mayoneese</p>
+          </div>
         </div>
       </div>
+
+      <Blob
+        width="var(--s-58)"
+        colour="yellow"
+        shade="00"
+        right="-5%"
+        top="70%"
+        rotate={getRandonNumber(80, 120)}
+      />
+      {/* width, rotate, colour, shade, left, top, right */}
     </div>
   )
 }
