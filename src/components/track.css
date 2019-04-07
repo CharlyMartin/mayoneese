@@ -1,5 +1,6 @@
 .track {
   position: relative;
+  background: white;
   border-radius: var(--s-3);
   overflow: hidden;
   box-shadow: 0 0 var(--s-6) rgba(80, 80, 80, 0.1);
@@ -29,8 +30,10 @@
 }
 
 .track .header {
-  height: var(--s-58);
+  height: var(--s-40);
   width: 100%;
+  background-image: linear-gradient(rgba(52, 50, 45, 0.8), rgba(52, 50, 45, 0.01));
+  margin-bottom: var(--s-24);
 }
 
 .track .header-content {

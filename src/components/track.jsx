@@ -17,7 +17,7 @@ function Track(props) {
   console.log(data);
 
   const style = {
-    backgroundImage: `linear-gradient(rgba(52, 50, 45, 0.5), rgba(52, 50, 45, 0)), url(${data.Artboard[0].url})`,
+    backgroundImage: `url(${data.Artboard[0].url})`,
   }
 
   const renderRecipe = (recipe) => {
