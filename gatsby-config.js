@@ -72,11 +72,11 @@ module.exports = {
         fonts: [
           {
             family: `Quicksand`,
-            variants: [`100`, `300`, `400`, `500`, `700`]
+            variants: [`300`, `400`, `500`, `700`]
           },
           {
             family: `Overpass`,
-            variants: [`300`, `400`, `600`, `700`]
+            variants: [`100`, `300`, `400`, `600`, `700`]
           },
         ],
       },

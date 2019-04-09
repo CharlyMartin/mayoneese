@@ -19,7 +19,7 @@ function Profile(props) {
   const { user } = props.pageContext;
   // console.log(user);
 
-  const renderHeader = () => (
+  const renderHeaderContent = () => (
     <div className="container">
       <p className="suggestions">{data.header.selection}</p>
       <h1 className="name">{user.Name}</h1>
@@ -41,62 +41,62 @@ function Profile(props) {
   const renderTracks = (tracks) => {
     return tracks.map(track => {
       return (
-        <A href={track.data.SoundCloud} key={Math.random()}>
+        <A href={track.data.SoundCloud} key={track.data.Id}>
           <Track obj={track}/>
         </A>
       )
     });
   }
 
+  const renderHeader = () => (
+    <div>
+      <Banner colour="yellow" shade="00" blob="bottom">
+        <section className="user">
+          {renderHeaderContent()}
+        </section>
+      </Banner>
+
+      <Banner
+        colour="yellow"
+        shade="20"
+        blob="bottom"
+        width="150%"
+        top="1%"
+        left="-25%"
+        position="absolute"
+        zIndex="-10"
+        rotate="-2"
+      >
+        <div className="user">
+          {renderHeaderContent()}
+        </div>
+      </Banner>
+
+      <Banner
+        colour="yellow"
+        shade="30"
+        blob="bottom"
+        width="150%"
+        top="2%"
+        left="-25%"
+        position="absolute"
+        zIndex="-20"
+        rotate="-4"
+      >
+        <div className="user">
+          {renderHeaderContent()}
+        </div>
+      </Banner>
+    </div>
+  )
+
   
   return (
     <Layout>
-      <SEO title="Profile" />
+      <SEO title={`Suggestions of ${user.Name}`} />
       <div id="profile-page">
-
-        <Banner colour="yellow" shade="00" blob="bottom">
-          <section className="user">
-            {renderHeader()}
-          </section>
-        </Banner>
-
-        <Banner
-          colour="yellow"
-          shade="20"
-          blob="bottom"
-          width="150%"
-          top="1%"
-          left="-25%"
-          position="absolute"
-          zIndex="-10"
-          rotate="-1"
-        >
-          <div className="user">
-            {renderHeader()}
-          </div>
-        </Banner>
-
-        <Banner
-          colour="yellow"
-          shade="30"
-          blob="bottom"
-          width="150%"
-          top="1%"
-          left="-25%"
-          position="absolute"
-          zIndex="-20"
-          rotate="-3"
-        >
-          <div className="user">
-            {renderHeader()}
-          </div>
-        </Banner>
-
-        {/* <div className="background-messages">
-          <div className="container">
-            {renderWallpaper()}
-          </div>
-        </div> */}
+      
+      {renderHeader()}
 
         <section id="suggestions">
           <div className="container">
@@ -113,20 +113,6 @@ function Profile(props) {
           </div>
         </section>
 
-        {/* <div className="container">
-          <div className="test">
-            <div className="test-name">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus omnis eligendi incidunt eaque aspernatur esse ducimus
-                praesentium illo laboriosam nesciunt temporibus, commodi laborum
-                error, veniam dicta recusandae fugit, deserunt eos!
-              </p>
-            </div>
-          </div>
-
-          <Link to="/">Go home</Link>
-        </div> */}
       </div>
     </Layout>
   )

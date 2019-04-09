@@ -42,7 +42,6 @@ class Banner extends React.Component {
       left: left || `-10%`,
       top: top || `0%`,
       zIndex: zIndex || `0`,
-      padding: `var(--s-20)`,
       transform: `rotate(${rotate}deg)`
     }
 

@@ -1,7 +1,11 @@
 #profile-page {
-  /* width: 100vw; */
   overflow: hidden;
   position: relative;
+}
+
+#profile-page .banner.blob-bottom {
+  padding-top: var(--s-32);
+  padding-bottom: var(--s-12);  
 }
 
 .user {
@@ -10,15 +14,17 @@
 }
 
 .user .name {
-  font-weight: 300;
-  color: var(--yellow-90);
+  font-weight: 400;
+  color: var(--yellow-40);
   padding-bottom: var(--s-16);
   padding-top: var(--s-2);
-  font-size: var(--s-24);
+  font-size: var(--s-16);
+  font-family: 'Overpass';
+  letter-spacing: -3px;
 }
 
 .user .suggestions {
-  color: var(--grey-40);
+  color: var(--grey-60);
   font-size: var(--s-4);
   padding-bottom: var(--s-4);
 }
@@ -47,7 +53,7 @@
 }
 
 #suggestions {
-  padding-top: var(--s-32);
+  padding-top: var(--s-50);
   padding-bottom: var(--s-32);
 }
 
@@ -107,15 +113,14 @@
   }
 
   .user .suggestions {
-    color: var(--grey-40);
-    font-size: var(--s-4);
+    font-size: var(--s-3);
     padding-bottom: var(--s-1);
   }
 
   .user .name {
     padding-top: 0;
     padding-bottom: var(--s-12);
-    font-size: var(--s-16);
+    font-size: var(--s-12);
   }
 }
 

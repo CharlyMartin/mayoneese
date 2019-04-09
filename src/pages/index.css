@@ -2,6 +2,11 @@
   overflow: hidden;
 }
 
+#home-page .banner.blob-bottom {
+  padding-top: var(--s-10);
+  padding-bottom: var(--s-20);
+}
+
 #hero {
   padding-top: var(--s-24);
   padding-bottom: 0;
