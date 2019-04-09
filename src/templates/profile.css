@@ -5,14 +5,16 @@
 }
 
 .user {
-  padding-top: var(--s-10);
-  padding-bottom: var(--s-10);
+  padding-top: var(--s-4);
+  padding-bottom: var(--s-6);
 }
 
 .user .name {
   font-weight: 300;
   color: var(--yellow-90);
-  padding-bottom: var(--s-8);
+  padding-bottom: var(--s-16);
+  padding-top: var(--s-2);
+  font-size: var(--s-24);
 }
 
 .user .suggestions {
@@ -78,23 +80,6 @@
   z-index: -10;
 }
 
-.test {
-  height: 300px;
-  width: 300px;
-  background: salmon;
-}
- .test-name {
-   /* height: 10%; */
-   max-width: 100%;
- }
-
- /* Make text stay in box */
- .test-name p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
- }
-
 @media screen and (max-width: 992px) {
   /* Up to that screen width, the following rules apply: */
   #suggestions .wallpaper {
@@ -110,19 +95,35 @@
   /* Up to that screen width, the following rules apply: */
   #suggestions .wallpaper {
     width: 0%;
-    display: none;
   }
   
   #suggestions .songs {
     width: 100%;
   }
 
+  .message {
+    font-size: var(--s-40);
+    line-height: var(--s-32);
+  }
+
+  .user .suggestions {
+    color: var(--grey-40);
+    font-size: var(--s-4);
+    padding-bottom: var(--s-1);
+  }
+
+  .user .name {
+    padding-top: 0;
+    padding-bottom: var(--s-12);
+    font-size: var(--s-16);
+  }
 }
 
 @media screen and (max-width: 576px) {
   /* Up to that screen width, the following rules apply: */
   #suggestions .wallpaper {
-    width: 1%;
+    display: none;
+    width: 0%;
   }
   
   #suggestions .songs {
