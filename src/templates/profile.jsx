@@ -38,8 +38,15 @@ function Profile(props) {
     return strings.map(s => <h3 className="message" key={s}>{s}</h3>);
   };
 
+  const filterPublished = (array) => {
+    return array.filter(song => song.data.Status === "Published")
+  }
+
   const renderTracks = (tracks) => {
-    return tracks.map(track => {
+    const publishedTracks = filterPublished(tracks);
+
+    return publishedTracks.map(track => {
+      console.log(track);
       return (
         <A href={track.data.SoundCloud} key={track.data.Id}>
           <Track obj={track}/>

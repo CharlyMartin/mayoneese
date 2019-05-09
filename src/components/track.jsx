@@ -14,7 +14,6 @@ import { getRandonNumber } from '../helpers/functions'
 // Component
 function Track(props) {
   const { data } = props.obj;
-  console.log(data);
 
   const style = {
     backgroundImage: `url(${data.Artboard[0].url})`,
@@ -24,7 +23,7 @@ function Track(props) {
     let colour;
     if (recipe === 'Mayoneese') {colour = "yellow"};
     if (recipe === 'Mustard') {colour = "orange"};
-    if (recipe === 'Hot Sauce') {colour = "red"};
+    if (recipe === 'Spicy') {colour = "red"};
     
     const style = {
       color: `var(--${colour}-50)`
@@ -38,7 +37,7 @@ function Track(props) {
     let colour;
     if (recipe === 'Mayoneese') {colour = "yellow"};
     if (recipe === 'Mustard') {colour = "orange"};
-    if (recipe === 'Hot Sauce') {colour = "red"};
+    if (recipe === 'Spicy') {colour = "red"};
     
     return (
       <Blob

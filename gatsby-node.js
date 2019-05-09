@@ -25,6 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
                 data {
                   Name
                   Recipe
+                  Status
                   Date
                   SoundCloud
                   YouTube
